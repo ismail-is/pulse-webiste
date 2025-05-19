@@ -1,0 +1,222 @@
+import React, { useState } from 'react';
+import './MenuOder.css'; // <- Import custom CSS for animation
+
+const MenuOder = () => {
+  const [activeTab, setActiveTab] = useState('lifestyle');
+  const [mealCounts, setMealCounts] = useState({
+    breakfast: 1,
+    lunch: 1,
+    dinner: 1,
+    salad: 1,
+    snack: 1
+  });
+
+  const mealImages = {
+    breakfast: 'https://freshhouse.com.sa/freshhouse_website_extended/static/src/img/breakfastbox.png',
+    lunch: 'https://freshhouse.com.sa/freshhouse_website_extended/static/src/img/lunchbox.png',
+    dinner: 'https://freshhouse.com.sa/freshhouse_website_extended/static/src/img/dinnerbox.png'
+  };
+
+  const handleTabChange = (tab) => setActiveTab(tab);
+
+  const handleMealCountChange = (mealType, value) => {
+    setMealCounts(prev => ({
+      ...prev,
+      [mealType]: Math.max(0, Math.min(2, parseInt(value)))
+    }));
+  };
+
+  const incrementMeal = (mealType) => {
+    setMealCounts(prev => ({
+      ...prev,
+      [mealType]: Math.min(2, prev[mealType] + 1)
+    }));
+  };
+
+  const decrementMeal = (mealType) => {
+    const minValue = (mealType === 'salad' || mealType === 'snack') ? 1 : 0;
+    setMealCounts(prev => ({
+      ...prev,
+      [mealType]: Math.max(minValue, prev[mealType] - 1)
+    }));
+  };
+
+  const totalItems = Object.values(mealCounts).reduce((sum, count) => sum + count, 0);
+
+  return (
+    <section className="s_text_image pt32 pb32 o_colored_level" style={{ backgroundImage: 'none' }}>
+      <div className="container">
+        <div className="row align-items-center package package-sec">
+          <div className="col-lg-8 col-md-12 pt16 pb16 o_colored_level">
+            <div className="s_tabs_nav mb-3">
+              <ul className="nav nav-pills justify-content-center" role="tablist">
+                {['lifestyle', 'keto', 'veg', 'freshgrab'].map((tab) => (
+                  <li className="nav-item" key={tab}>
+                    <a
+                      className={`nav-link ${activeTab === tab ? 'active' : ''}`}
+                      onClick={() => handleTabChange(tab)}
+                    >
+                      {tab === 'lifestyle' ? 'Lifestyles' :
+                        tab === 'keto' ? 'Low Carb' :
+                          tab === 'veg' ? 'Gluten Free' : 'FreshGrab'}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="s_tabs_content tab-content">
+              <div className={`tab-pane fade ${activeTab === 'lifestyle' ? 'show active' : ''}`}>
+                <section className="s_text_block">
+                  <div className="container">
+                    {['breakfast', 'lunch', 'dinner', 'salad', 'snack'].map((mealType) => (
+                      <div className="row align-items-center mb-4" key={mealType}>
+                        <div className="col-lg-4 col-md-3">
+                          <span className="english-font-dpbreak text-capitalize">{mealType}</span>
+                        </div>
+                        <div className="col-lg-8 col-md-9">
+                          <div className="d-flex align-items-center">
+                            <input
+                              type="range"
+                              className="fh_range_dynamic_menu_input flex-grow-2 mx-3"
+                              value={mealCounts[mealType]}
+                              min={mealType === 'salad' || mealType === 'snack' ? '1' : '0'}
+                              max="2"
+                              onChange={(e) => handleMealCountChange(mealType, e.target.value)}
+                              style={{ accentColor: '#01461F' }}
+                            />
+                            <div className="d-flex align-items-center">
+                              <span className="span_package_digits rounded-circle bg-light mx-2 d-flex align-items-center justify-content-center"
+                                style={{ width: '30px', height: '30px' }}>
+                                {mealCounts[mealType]}
+                              </span>
+
+                              <button
+                                className="btn btn-outline-secondary rounded-circle p-0 d-flex align-items-center justify-content-center animated-button"
+                                style={{
+                                  width: '50px',
+                                  height: '50px',
+                                  fontSize: '14px',
+                                  backgroundColor: '#01461F',
+                                  color: '#fff',
+                                  margin: '10px'
+                                }}
+                                onClick={() => decrementMeal(mealType)}
+                              >
+                                <i className="fa fa-minus"></i>
+                              </button>
+
+                              <button
+                                className="btn btn-outline-secondary rounded-circle p-0 d-flex align-items-center justify-content-center ml-2 animated-button"
+                                style={{
+                                  width: '50px',
+                                  height: '50px',
+                                  fontSize: '14px',
+                                  backgroundColor: '#01461F',
+                                  color: '#fff'
+                                }}
+                                onClick={() => incrementMeal(mealType)}
+                                disabled={mealCounts[mealType] >= 2}
+                              >
+                                <i className="fa fa-plus"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-12 packages_pricing_img_div pt16 pb16 p-12">
+            <div className="card shadow-sm border-0">
+              <div className="card-body text-center">
+                <div className="meal-visualization mb-4 d-flex flex-column align-items-center">
+                  {Object.entries(mealCounts).map(([mealType, count]) => (
+                    mealImages[mealType] && count > 0 && (
+                      <div key={mealType} className="meal-item mb-3 position-relative w-75">
+                        <img
+                          src={mealImages[mealType]}
+                          alt={mealType}
+                          className="img-fluid"
+                          style={{
+                            width: '100%',
+                            objectFit: 'cover',
+                            marginTop:'-45px',
+                            zIndex:'auto'
+                          }}
+                        />
+                        {count > 1 && (
+                          <div className="position-absolute" style={{ top: '-10px', right: '-10px' }}>
+                            <span className="badge badge-dark rounded-circle d-flex align-items-center justify-content-center"
+                              style={{
+                                width: '40px',
+                                height: '40px',
+                                fontSize: '12px',
+                                fontWeight: 'bold',
+                                backgroundColor: '#01461F'
+                              }}>
+                              x{count}
+                            </span>
+                          </div>
+                        )}
+                      </div>
+                    )
+                  ))}
+
+                  <div className="d-flex justify-content-center gap-3 mt-3">
+                    <img src='https://freshhouse.com.sa/freshhouse_website_extended/static/src/img/salad.png' alt='salad' style={{ maxWidth: '80px' }} />
+                    <img src='https://freshhouse.com.sa/freshhouse_website_extended/static/src/img/snack.png' alt='snack' style={{ maxWidth: '80px' }} />
+                  </div>
+                </div>
+
+                <div className="total-summary bg-light p-3 rounded">
+                  <h6>Total Items: {totalItems}</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="bottom_bar_home" className="row bottom-bar justify-content-between mt-4 mx-auto home-subscription-btn-sec text-center text-md-left">
+          <div className="col-12 col-md-3 mb-2 mb-md-0">
+            <p className="english-font-bottombarp">
+              Meal Type: <span className="font-weight-bold">{activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}</span>
+            </p>
+          </div>
+          <div className="col-12 col-md-3 mb-2 mb-md-0">
+            <p className="english-font-bottombarp">
+              Total Calories: <span className="font-weight-bold">1275</span>
+            </p>
+          </div>
+          <div className="col-12 col-md-3 mb-2 mb-md-0">
+            <p className="english-font-bottombarp">
+              Starting From: <span className="font-weight-bold">605.0 SAR</span>
+            </p>
+          </div>
+          <div className="col-12 col-md-3 d-flex justify-content-center mt-3 mt-md-0">
+            <button
+              className="btn btn-primary btn-lg rounded-pill px-4 py-2 w-100 w-md-auto"
+              style={{
+                backgroundColor: '#01461F',
+                borderColor: '#BFFF00',
+                fontWeight: '600',
+                letterSpacing: '1px',
+                transition: 'all 0.3s',
+                maxWidth: '250px'
+              }}
+              onClick={() => window.location.href = '/'}
+            >
+              Subscribe Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default MenuOder;

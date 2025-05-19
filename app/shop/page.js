@@ -8,7 +8,7 @@ const page = () => {
       <section className="shop-area py-130 rpy-100">
         <div className="container">
           <div className="row">
-            <div className="col-xl-3 col-lg-4 col-md-8">
+            {/* <div className="col-xl-3 col-lg-4 col-md-8">
               <div className="shop-sidebar rmb-75">
                 <div
                   className="widget widget-search"
@@ -202,10 +202,10 @@ const page = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-9 col-lg-8">
+            </div> */}
+            <div className="col-xl-12 col-lg-8">
               <div className="shop-page-wrap">
-                <div className="shop-shorter rel z-3 mb-35">
+                {/* <div className="shop-shorter rel z-3 mb-35">
                   <div
                     className="sort-text mb-15"
                     data-aos="fade-left"
@@ -230,7 +230,7 @@ const page = () => {
                       <option value="low-to-high">Low To High</option>
                     </select>
                   </div>
-                </div>
+                </div> */}
                 <div className="row">
                   <div
                     className="col-xl-4 col-sm-6"

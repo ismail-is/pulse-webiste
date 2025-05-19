@@ -1,6 +1,7 @@
 "use client";
 import Counter from "@/components/Counter";
 import FoodCategory from "@/components/FoodCategory";
+import MenuOder from "@/components/MenuOder";
 import OfferCard from "@/components/OfferCard";
 import { TestimonialSlider2 } from "@/components/TestimonialSlider";
 import WellFoodLayout from "@/layout/WellFoodLayout";
@@ -124,6 +125,16 @@ const page = () => {
       </section>
        <FoodCategory/>
 {/* index2 hero  */}
+
+
+{/* custome */}
+<MenuOder/>
+{/* custome */}
+
+
+
+
+
 
 
 
