@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './MenuOder.css'; // <- Import custom CSS for animation
+import './MenuOder.css';
 
 const MenuOder = () => {
   const [activeTab, setActiveTab] = useState('lifestyle');
@@ -47,6 +47,7 @@ const MenuOder = () => {
     <section className="s_text_image pt32 pb32 o_colored_level" style={{ backgroundImage: 'none' }}>
       <div className="container">
         <div className="row align-items-center package package-sec">
+          {/* Left Side - Meal Sliders */}
           <div className="col-lg-8 col-md-12 pt16 pb16 o_colored_level">
             <div className="s_tabs_nav mb-3">
               <ul className="nav nav-pills justify-content-center" role="tablist">
@@ -99,7 +100,7 @@ const MenuOder = () => {
                                   fontSize: '14px',
                                   backgroundColor: '#01461F',
                                   color: '#fff',
-                                  margin: '10px'
+                                  margin: '6px'
                                 }}
                                 onClick={() => decrementMeal(mealType)}
                               >
@@ -131,56 +132,78 @@ const MenuOder = () => {
             </div>
           </div>
 
+          {/* Right Side - Meal Image Preview */}
           <div className="col-lg-4 col-md-12 packages_pricing_img_div pt16 pb16 p-12">
             <div className="card shadow-sm border-0">
               <div className="card-body text-center">
-                <div className="meal-visualization mb-4 d-flex flex-column align-items-center">
+                <div
+                  className="meal-visualization mb-4 d-flex flex-column align-items-center justify-content-center"
+                  style={{ position: 'relative', height: '400px', width: '100%' }} // Added position relative and fixed height here
+                >
                   {Object.entries(mealCounts).map(([mealType, count]) => (
                     mealImages[mealType] && count > 0 && (
-                      <div key={mealType} className="meal-item mb-3 position-relative w-75">
+                      <div
+                        key={mealType}
+                        className="meal-item w-75"
+                        style={{
+                          position: 'relative',
+                          height: '140px',
+                          marginTop:
+                            mealType === 'lunch' ? '-80px' :
+                            mealType === 'dinner' ? '-80px' :
+                            '130px',
+                          zIndex:
+                            mealType === 'breakfast' ? 3 :
+                            mealType === 'lunch' ? 2 :
+                            mealType === 'dinner' ? 1 : 0,
+                          left: '50%',
+                          transform: 'translateX(-50%)',
+                        }}
+                      >
                         <img
                           src={mealImages[mealType]}
                           alt={mealType}
                           className="img-fluid"
                           style={{
+                            height: '100%',
                             width: '100%',
-                            objectFit: 'cover',
-                            marginTop:'-45px',
-                            zIndex:'auto'
+                            objectFit: 'contain',
+                            display: 'block'
                           }}
                         />
                         {count > 1 && (
-                          <div className="position-absolute" style={{ top: '-10px', right: '-10px' }}>
-                            <span className="badge badge-dark rounded-circle d-flex align-items-center justify-content-center"
-                              style={{
-                                width: '40px',
-                                height: '40px',
-                                fontSize: '12px',
-                                fontWeight: 'bold',
-                                backgroundColor: '#01461F'
-                              }}>
-                              x{count}
-                            </span>
-                          </div>
+                          <span
+                            className="badge badge-dark rounded-circle d-flex align-items-center justify-content-center"
+                            style={{
+                              position: 'absolute',
+                              top: '15px',
+                              right: '-18px',
+                              width: '40px',
+                              height: '40px',
+                              fontSize: '12px',
+                              fontWeight: 'bold',
+                              backgroundColor: '#01461F',
+                              zIndex: 10
+                            }}
+                          >
+                            x{count}
+                          </span>
                         )}
                       </div>
                     )
                   ))}
-
-                  <div className="d-flex justify-content-center gap-3 mt-3">
-                    <img src='https://freshhouse.com.sa/freshhouse_website_extended/static/src/img/salad.png' alt='salad' style={{ maxWidth: '80px' }} />
-                    <img src='https://freshhouse.com.sa/freshhouse_website_extended/static/src/img/snack.png' alt='snack' style={{ maxWidth: '80px' }} />
-                  </div>
                 </div>
 
-                <div className="total-summary bg-light p-3 rounded">
+                {/* Optional: Total Items summary */}
+                {/* <div className="total-summary bg-light p-3 rounded">
                   <h6>Total Items: {totalItems}</h6>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
 
+        {/* Bottom Bar */}
         <div id="bottom_bar_home" className="row bottom-bar justify-content-between mt-4 mx-auto home-subscription-btn-sec text-center text-md-left">
           <div className="col-12 col-md-3 mb-2 mb-md-0">
             <p className="english-font-bottombarp">

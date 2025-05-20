@@ -1,4 +1,5 @@
 "use client";
+import CategoryBanner from "@/components/CategoryBanner";
 import Counter from "@/components/Counter";
 import FoodCategory from "@/components/FoodCategory";
 import MenuOder from "@/components/MenuOder";
@@ -405,7 +406,15 @@ const page = () => {
                 data-aos-duration={1500}
                 data-aos-offset={50}
               >
-                <img src="assets/images/cta/cta-two.png" alt="CTA" />
+                <img
+  src="assets/images/cta/cta-two.png"
+  alt="CTA"
+  style={{
+    animation: 'spin 20s linear infinite',
+    transformOrigin: 'center',
+  }}
+/>
+
                 <div className="badge">
                   <img src="assets/images/cta/cta-two-badge.png" alt="Badge" />
                 </div>
@@ -531,91 +540,18 @@ const page = () => {
             </div>
           </div>
           <div className="row justify-content-center ">
+           
+
+
+
             <div
-              className="col-xl-3 col-lg-6 z-3"
-              data-aos="fade-up"
-              data-aos-duration={1500}
-              data-aos-offset={50}
-            >
-              <div className="food-item" id="foodItem1">
-                <div className="content">
-                  <div className="name-desc" >
-                    <h5>Red king Crab</h5>
-                    <p>Native to the icy waters of the Pacific</p>
-                  </div>
-                  <div className="price">
-                    <span>$25</span>
-                  </div>
-                </div>
-                <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
-                </div>
-              </div>
-              <div className="food-item">
-                <div className="content">
-                  <div className="name-desc">
-                    <h5>Alaskan king Crab</h5>
-                    <p>Native to the icy waters of the Pacific</p>
-                  </div>
-                  <div className="price">
-                    <span>$10</span>
-                  </div>
-                </div>
-                <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
-                </div>
-              </div>
-              <div className="food-item">
-                <div className="content">
-                  <div className="name-desc">
-                    <h5>Pizza</h5>
-                    <p>Native to the icy waters of the Pacific</p>
-                  </div>
-                  <div className="price">
-                    <span>$22</span>
-                  </div>
-                </div>
-                <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
-                </div>
-              </div>
-              <div className="food-item">
-                <div className="content">
-                  <div className="name-desc">
-                    <h5>Hamburger</h5>
-                    <p>Native to the icy waters of the Pacific</p>
-                  </div>
-                  <div className="price">
-                    <span>$43</span>
-                  </div>
-                </div>
-                <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
-                </div>
-              </div>
-              <div className="food-item mb-30">
-                <div className="content">
-                  <div className="name-desc">
-                    <h5>chicken soup</h5>
-                    <p>Native to the icy waters of the Pacific</p>
-                  </div>
-                  <div className="price">
-                    <span>$77</span>
-                  </div>
-                </div>
-                <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-xl-3 col-lg-6 z-2"
+              className="col-xl-3 col-lg-6 z-5"
               data-aos="fade-up"
               data-aos-delay={50}
               data-aos-duration={1500}
               data-aos-offset={50}
             >
-              <div className="food-item">
+              <div className="food-item" id="foodItem1">
                 <div className="content">
                   <div className="name-desc">
                     <h5>Red king Crab</h5>
@@ -629,7 +565,7 @@ const page = () => {
                   <img src="assets/images/food/food1.png" alt="Food Image" />
                 </div>
               </div>
-              <div className="food-item">
+              <div className="food-item" id="foodItem2">
                 <div className="content">
                   <div className="name-desc">
                     <h5>Alaskan king Crab</h5>
@@ -643,7 +579,7 @@ const page = () => {
                   <img src="assets/images/food/food1.png" alt="Food Image" />
                 </div>
               </div>
-              <div className="food-item">
+              <div className="food-item" id="foodItem3">
                 <div className="content">
                   <div className="name-desc">
                     <h5>Pizza</h5>
@@ -657,7 +593,7 @@ const page = () => {
                   <img src="assets/images/food/food1.png" alt="Food Image" />
                 </div>
               </div>
-              <div className="food-item">
+              <div className="food-item" id="foodItem4">
                 <div className="content">
                   <div className="name-desc">
                     <h5>Hamburger</h5>
@@ -671,7 +607,7 @@ const page = () => {
                   <img src="assets/images/food/food1.png" alt="Food Image" />
                 </div>
               </div>
-              <div className="food-item mb-30">
+              <div className="food-item mb-30" id="foodItem5">
                 <div className="content">
                   <div className="name-desc">
                     <h5>chicken soup</h5>
@@ -686,14 +622,16 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div
-              className="col-xl-3 col-lg-6 "
+
+
+             <div
+              className="col-xl-3 col-lg-6 z-4"
               data-aos="fade-up"
-              data-aos-delay={100}
+              data-aos-delay={50}
               data-aos-duration={1500}
               data-aos-offset={50}
             >
-              <div className="food-item">
+              <div className="food-item" id="foodItem5">
                 <div className="content">
                   <div className="name-desc">
                     <h5>Red king Crab</h5>
@@ -707,7 +645,7 @@ const page = () => {
                   <img src="assets/images/food/food1.png" alt="Food Image" />
                 </div>
               </div>
-              <div className="food-item">
+              <div className="food-item" id="foodItem4">
                 <div className="content">
                   <div className="name-desc">
                     <h5>Alaskan king Crab</h5>
@@ -721,7 +659,7 @@ const page = () => {
                   <img src="assets/images/food/food1.png" alt="Food Image" />
                 </div>
               </div>
-              <div className="food-item">
+              <div className="food-item" id="foodItem3">
                 <div className="content">
                   <div className="name-desc">
                     <h5>Pizza</h5>
@@ -735,7 +673,7 @@ const page = () => {
                   <img src="assets/images/food/food1.png" alt="Food Image" />
                 </div>
               </div>
-              <div className="food-item">
+              <div className="food-item" id="foodItem2">
                 <div className="content">
                   <div className="name-desc">
                     <h5>Hamburger</h5>
@@ -749,7 +687,7 @@ const page = () => {
                   <img src="assets/images/food/food1.png" alt="Food Image" />
                 </div>
               </div>
-              <div className="food-item mb-30">
+              <div className="food-item mb-30" id="foodItem1">
                 <div className="content">
                   <div className="name-desc">
                     <h5>chicken soup</h5>
@@ -764,13 +702,17 @@ const page = () => {
                 </div>
               </div>
             </div>
+
+
+
+           
             <div
               className="col-xl-3 col-lg-6 z-3"
               data-aos="fade-up"
               data-aos-duration={1500}
               data-aos-offset={50}
             >
-              <div className="food-item" id="foodItem1">
+              <div className="food-item"  id="foodItem1">
                 <div className="content">
                   <div className="name-desc" >
                     <h5>Red king Crab</h5>
@@ -784,7 +726,7 @@ const page = () => {
                   <img src="assets/images/food/food1.png" alt="Food Image" />
                 </div>
               </div>
-              <div className="food-item">
+              <div className="food-item"  id="foodItem2">
                 <div className="content">
                   <div className="name-desc">
                     <h5>Alaskan king Crab</h5>
@@ -798,7 +740,7 @@ const page = () => {
                   <img src="assets/images/food/food1.png" alt="Food Image" />
                 </div>
               </div>
-              <div className="food-item">
+              <div className="food-item"  id="foodItem3">
                 <div className="content">
                   <div className="name-desc">
                     <h5>Pizza</h5>
@@ -812,7 +754,7 @@ const page = () => {
                   <img src="assets/images/food/food1.png" alt="Food Image" />
                 </div>
               </div>
-              <div className="food-item">
+              <div className="food-item"  id="foodItem4">
                 <div className="content">
                   <div className="name-desc">
                     <h5>Hamburger</h5>
@@ -826,7 +768,7 @@ const page = () => {
                   <img src="assets/images/food/food1.png" alt="Food Image" />
                 </div>
               </div>
-              <div className="food-item mb-30">
+              <div className="food-item mb-30"  id="foodItem5">
                 <div className="content">
                   <div className="name-desc">
                     <h5>chicken soup</h5>
@@ -841,15 +783,98 @@ const page = () => {
                 </div>
               </div>
             </div>
+
+
+
+             <div
+              className="col-xl-3 col-lg-6 z-2"
+              data-aos="fade-up"
+              data-aos-duration={1500}
+              data-aos-offset={50}
+            >
+              <div className="food-item" id="foodItem5">
+                <div className="content">
+                  <div className="name-desc" >
+                    <h5>Red king Crab</h5>
+                    <p>Native to the icy waters of the Pacific</p>
+                  </div>
+                  <div className="price">
+                    <span>$25</span>
+                  </div>
+                </div>
+                <div className="image">
+                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                </div>
+              </div>
+              <div className="food-item"  id="foodItem4">
+                <div className="content">
+                  <div className="name-desc">
+                    <h5>Alaskan king Crab</h5>
+                    <p>Native to the icy waters of the Pacific</p>
+                  </div>
+                  <div className="price">
+                    <span>$10</span>
+                  </div>
+                </div>
+                <div className="image">
+                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                </div>
+              </div>
+              <div className="food-item"  id="foodItem3">
+                <div className="content">
+                  <div className="name-desc">
+                    <h5>Pizza</h5>
+                    <p>Native to the icy waters of the Pacific</p>
+                  </div>
+                  <div className="price">
+                    <span>$22</span>
+                  </div>
+                </div>
+                <div className="image">
+                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                </div>
+              </div>
+              <div className="food-item"  id="foodItem2">
+                <div className="content">
+                  <div className="name-desc">
+                    <h5>Hamburger</h5>
+                    <p>Native to the icy waters of the Pacific</p>
+                  </div>
+                  <div className="price">
+                    <span>$43</span>
+                  </div>
+                </div>
+                <div className="image">
+                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                </div>
+              </div>
+              <div className="food-item mb-30"  id="foodItem1">
+                <div className="content">
+                  <div className="name-desc">
+                    <h5>chicken soup</h5>
+                    <p>Native to the icy waters of the Pacific</p>
+                  </div>
+                  <div className="price">
+                    <span>$77</span>
+                  </div>
+                </div>
+                <div className="image">
+                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </section>
+      <CategoryBanner/>
       {/* Popular Menu Area end */}
       {/* Gallery Area Start */}
-      <div className="gallery-area rel z-1">
+      {/* <div className="gallery-area rel z-1">
         <div className="container-fluid">
           <div className="row justify-content-center">
-            <div className="col-xl-4 col-sm-6">
+            <div className="col-xl-4 col-sm-6" >
               <div
                 className="gallery-item"
                 data-aos="fade-up"
@@ -901,7 +926,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Gallery Area End */}
       {/* Why choose Us Area start */}
       <section className="why-choose-area bgc-lighter pt-240 rpt-150 pb-100 rpb-70 rel z-1">
@@ -1177,7 +1202,7 @@ const page = () => {
       </section>
       {/* Call To Action Area end */}
       {/* Dishes Area start */}
-      <section className="dishes-area pt-130 rpt-100 rel z-1">
+      {/* <section className="dishes-area pt-130 rpt-100 rel z-1">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-12">
@@ -1312,7 +1337,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Dishes Area end */}
       {/* Blog Area start */}
       {/* <section className="blog-area pt-100 rpt-70 pb-90 rpb-60 rel z-1">

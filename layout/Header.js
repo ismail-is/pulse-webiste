@@ -323,17 +323,17 @@ const MobileMenu = () => {
                 Call : <a href="callto:+88012345688">+880 123 456 88</a>
               </div>
               {/* Nav Search */}
-              <SearchBtn />
+              {/* <SearchBtn /> */}
               {/* Menu Button */}
               <div className="menu-btns">
                 <button>
                   <i className="far fa-shopping-cart" /> <span>2</span>
                 </button>
                 <Link href="contact" className="theme-btn">
-                  Book now <i className="far fa-arrow-alt-right" />
+                  DOWNLOAD APP<i className="far fa-arrow-alt-right" />
                 </Link>
                 {/* menu sidbar */}
-                <div className="menu-sidebar">
+                {/* <div className="menu-sidebar">
                   <button
                     className="bg-transparent"
                     onClick={() =>
@@ -342,7 +342,7 @@ const MobileMenu = () => {
                         .classList.add("side-content-visible")
                     }
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -370,7 +370,7 @@ const Header = () => {
         {/*Header-Upper*/}
         <div className="header-upper">
           <div className="container-fluid clearfix">
-            <div className="header-inner rel d-flex align-items-center">
+            <div className="header-inner rel d-flex align-items-center "  >
               <div className="logo-outer">
                 <div className="logo">
                   <Link href="/">
@@ -407,10 +407,19 @@ const Header = () => {
                       <span className="icon-bar" />
                     </button>
                   </div>
-                  <div className="navbar-collapse collapse clearfix">
-                    <ul className="navigation clearfix">
+                  <div className="navbar-collapse collapse clearfix " >
+                    <ul className="navigation clearfix "  >
                       <li>
                         <Link href="/">Home</Link>
+                      </li>
+                      <li>
+                        <Link href="/about">about</Link>
+                      </li>
+                      <li>
+                        <Link href="/">Subscriptions </Link>
+                      </li>
+                      <li>
+                        <Link href="/menu">Menu</Link>
                       </li>
                       {/* <li className="dropdown">
                         <a href="#">Home</a>
@@ -438,7 +447,7 @@ const Header = () => {
                           <span className="far fa-angle-down" />
                         </div>
                       </li> */}
-                      <li className="dropdown">
+                      {/* <li className="dropdown">
                         <a href="#">Menu</a>
                         <ul>
                           <li>
@@ -463,8 +472,8 @@ const Header = () => {
                         <div className="dropdown-btn">
                           <span className="far fa-angle-down" />
                         </div>
-                      </li>
-                      <li className="dropdown">
+                      </li> */}
+                      {/* <li className="dropdown">
                         <a href="#">pages</a>
                         <ul>
                           <li>
@@ -531,7 +540,7 @@ const Header = () => {
                         <div className="dropdown-btn">
                           <span className="far fa-angle-down" />
                         </div>
-                      </li>
+                      </li> */}
                       <li>
                         <Link href="contact">Contact</Link>
                       </li>
@@ -541,21 +550,21 @@ const Header = () => {
                 {/* Main Menu End*/}
               </div>
               <div className="header-number">
-                <i className="far fa-phone" />
-                Call : <a href="callto:+88012345688">+880 123 456 88</a>
+                {/* <i className="far fa-phone" />
+                Call : <a href="callto:+88012345688">+880 123 456 88</a> */}
               </div>
               {/* Nav Search */}
-              <SearchBtn />
+              {/* <SearchBtn /> */}
               {/* Menu Button */}
               <div className="menu-btns">
-                <button>
+                {/* <button>
                   <i className="far fa-shopping-cart" /> <span>2</span>
-                </button>
+                </button> */}
                 <Link href="contact" className="theme-btn">
-                  Book now <i className="far fa-arrow-alt-right" />
+                 DOWNLOAD APP<i className="far fa-arrow-alt-right" />
                 </Link>
                 {/* menu sidbar */}
-                <div className="menu-sidebar">
+                {/* <div className="menu-sidebar">
                   <button
                     className="bg-transparent"
                     onClick={() =>
@@ -564,7 +573,7 @@ const Header = () => {
                         .classList.add("side-content-visible")
                     }
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

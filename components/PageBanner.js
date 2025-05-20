@@ -16,7 +16,7 @@ const PageBanner = ({ pageTitle, pageName }) => {
           >
             {pageTitle}
           </h1>
-          <nav aria-label="breadcrumb">
+          {/* <nav aria-label="breadcrumb">
             <ol
               className="breadcrumb justify-content-center"
               data-aos="fade-up"
@@ -31,7 +31,7 @@ const PageBanner = ({ pageTitle, pageName }) => {
                 {pageName ? pageName : pageTitle}
               </li>
             </ol>
-          </nav>
+          </nav> */}
         </div>
       </div>
     </section>

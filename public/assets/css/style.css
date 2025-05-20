@@ -65,7 +65,8 @@ body {
   font-size: 16px;
   font-family: var(--base-font);
   --base-font: "Roboto", sans-serif;
-  --heading-font: "Bebas Neue", sans-serif;
+  --heading-font: "Arial MT ", serif;
+  /* --heading-font: "Bebas Neue", sans-serif; */
   --primary-color: #01471f;
   --secondary-color: #BFFF00;
   --heading-color: #0e1317;
@@ -4248,7 +4249,8 @@ h6,
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: center !important;
+  
 }
 @media only screen and (max-width: 1399px) {
   .main-menu .navbar-collapse li {
@@ -7208,6 +7210,34 @@ h6,
   background-color: var(--primary-color);
   background-image: url(../images/shapes/food-shape.png);
 }
+#foodItem1:hover {
+  color: white;
+  background-color:rgb(1 72 32);
+  background-image: url(../images/shapes/food-shape.png);
+}
+
+
+#foodItem2:hover {
+  color: white;
+  background-color:rgb(9 129 31);
+  background-image: url(../images/shapes/food-shape.png);
+}
+#foodItem3:hover {
+  color: white;
+  background-color:rgb(163 195 14);
+  background-image: url(../images/shapes/food-shape.png);
+}
+#foodItem4:hover {
+  color: white;
+  background-color:rgb(255 162 30);
+  background-image: url(../images/shapes/food-shape.png);
+}
+#foodItem5:hover {
+  color: white;
+  background-color:rgb(205 173 25);
+  background-image: url(../images/shapes/food-shape.png);
+}
+
 .food-item:hover .content h5,
 .food-item:hover .content .price span {
   color: white;
