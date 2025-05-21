@@ -46,6 +46,21 @@ const MenuOder = () => {
   return (
     <section className="s_text_image pt32 pb32 o_colored_level" style={{ backgroundImage: 'none' }}>
       <div className="container">
+           <div className="row justify-content-center">
+          <div className="col-xxl-12 col-xl-12 col-lg-9">
+            <div
+              className="section-title text-center mb-50"
+              data-aos="fade-up"
+              data-aos-duration={1500}
+              data-aos-offset={50}
+            >
+              {/* <span className="sub-title mb-5">  Fresh From Our Chefs To You</span> */}
+              <h2 style={{fontWeight:'bolder'}}>
+               YOUR DAILY ROUTINE
+              </h2>
+            </div>
+          </div>
+        </div>
         <div className="row align-items-center package package-sec">
           {/* Left Side - Meal Sliders */}
           <div className="col-lg-8 col-md-12 pt16 pb16 o_colored_level">

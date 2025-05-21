@@ -12,9 +12,9 @@ const FoodCategory = () => {
               data-aos-duration={1500}
               data-aos-offset={50}
             >
-              <span className="sub-title mb-5">popular food category</span>
-              <h2>
-                we provide amazing &amp; Quality food for your good health
+              <span className="sub-title mb-5">  Fresh From Our Chefs To You</span>
+              <h2 style={{fontWeight:'bolder'}}>
+                How It Works
               </h2>
             </div>
           </div>
@@ -32,9 +32,9 @@ const FoodCategory = () => {
               </div>
               <div className="content">
                 <h4>
-                  <Link href="menu-restaurant">Best Quality Food</Link>
+                  <Link href="menu-restaurant">Choose Your Plan</Link>
                 </h4>
-                <p>Sed ut perspiciatis unde omnis este natus sit voluptatem</p>
+                <p>Pick a meal plan that suits your lifestyle and goals — it only takes a minute</p>
               </div>
             </div>
           </div>
@@ -51,14 +51,14 @@ const FoodCategory = () => {
               </div>
               <div className="content">
                 <h4>
-                  <Link href="menu-restaurant">fast food delivery</Link>
+                  <Link href="menu-restaurant"> We Start Cooking</Link>
                 </h4>
-                <p>Sed ut perspiciatis unde omnis este natus sit voluptatem</p>
+                <p>Our chefs prepare your meals fresh with high-quality, wholesome ingredients</p>
               </div>
             </div>
           </div>
           <div
-            className="col-xl-4 col-md-6"
+            className="col-xl-6 col-md-6"
             data-aos="fade-up"
             data-aos-delay={100}
             data-aos-duration={1500}
@@ -70,9 +70,28 @@ const FoodCategory = () => {
               </div>
               <div className="content">
                 <h4>
-                  <Link href="menu-restaurant">money back guarantee</Link>
+                  <Link href="menu-restaurant">Delivered To Your Door</Link>
                 </h4>
-                <p>Sed ut perspiciatis unde omnis este natus sit voluptatem</p>
+                <p>Punctual, fresh, and right when you need it — no stress, no mess</p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-xl-6 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay={100}
+            data-aos-duration={1500}
+            data-aos-offset={50}
+          >
+            <div className="featured-item">
+              <div className="icon">
+                <i className="flaticon-cashback" />
+              </div>
+              <div className="content">
+                <h4>
+                  <Link href="menu-restaurant">Enjoy Every Bite</Link>
+                </h4>
+                <p>Heat, eat, and feel great — healthy eating has never been this easy</p>
               </div>
             </div>
           </div>

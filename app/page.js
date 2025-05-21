@@ -81,9 +81,9 @@ const page = () => {
         }}
       >
         <span className="marquee-wrap style-two text-white">
-          <span className="marquee-inner left">burger Hamburger</span>
-          <span className="marquee-inner left">burger Hamburger</span>
-          <span className="marquee-inner left">burger Hamburger</span>
+          <span className="marquee-inner left">Nutritious </span>
+          <span className="marquee-inner left">Nutritious </span>
+          <span className="marquee-inner left">Nutritious </span>
         </span>
         <div className="container">
           <div className="row align-items-end">
@@ -94,20 +94,19 @@ const page = () => {
                 data-aos-duration={1500}
                 data-aos-offset={50}
               >
-                <h1>Chicken Burger</h1>
+                <h1>  At Your<br/> Door Step</h1>
                 <p>
-                  Welcome to our culinary sanctuary, where every dish tells
-                  every bite is an adventure at our food
+                  Crafted by chefs, powered by nutrition
                 </p>
-                <Link href="shop" className="theme-btn style-two">
+                <Link href="menu" className="theme-btn style-two">
                   order now <i className="far fa-arrow-alt-right" />
                 </Link>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="hero-three-image">
-                <img src="assets/images/hero/hero-three.png" alt="Hero" />
-                <div
+                {/* <img src="assets/images/hero/hero-three.png" alt="Hero" /> */}
+                {/* <div
                   className="offer-badge"
                   style={{
                     backgroundImage:
@@ -118,7 +117,28 @@ const page = () => {
                     50% <br />
                     off
                   </span>
-                </div>
+                </div> */}
+                  <div
+                className="cta-two-image rmt-55 rmb-75"
+                data-aos="fade-up"
+                data-aos-delay={50}
+                data-aos-duration={1500}
+                data-aos-offset={50}
+              >
+                <img
+  src="https://freshhouse.com.sa/freshhouse_website_extended/static/src/img/homepage_img/breakfast-min.png"
+  alt="CTA"
+  style={{
+    animation: 'spin 20s linear infinite',
+    transformOrigin: 'center',
+    
+  }}
+/>
+
+                {/* <div className="badge">
+                  <img src="assets/images/cta/cta-two-badge.png" alt="Badge" />
+                </div> */}
+              </div>
               </div>
             </div>
           </div>
@@ -143,45 +163,45 @@ const page = () => {
       <div className="headline-area pt-10 rpt-90 rel z-1 mb-120">
         <span className="marquee-wrap">
           <span className="marquee-inner left">
-            <span className="marquee-item">Italian pizza</span>
+            <span className="marquee-item" style={{color:'#BBFA00'}}>Freshness</span>
             <span className="marquee-item">
-              <i className="flaticon-star" />
+              <i className="flaticon-star" style={{color:'#F79E36'}}/>
             </span>
-            <span className="marquee-item">delicious foods</span>
+            <span className="marquee-item"style={{color:'#094D26'}}>Nutritious </span>
             <span className="marquee-item">
-              <i className="flaticon-star" />
+              <i className="flaticon-star" style={{color:'#0C6D20'}}/>
             </span>
-            <span className="marquee-item">burger king</span>
+            <span className="marquee-item" style={{color:'#F79E36'}}>Delicious </span>
             <span className="marquee-item">
-              <i className="flaticon-star" />
-            </span>
-          </span>
-          <span className="marquee-inner left">
-            <span className="marquee-item">Italian pizza</span>
-            <span className="marquee-item">
-              <i className="flaticon-star" />
-            </span>
-            <span className="marquee-item">delicious foods</span>
-            <span className="marquee-item">
-              <i className="flaticon-star" />
-            </span>
-            <span className="marquee-item">burger king</span>
-            <span className="marquee-item">
-              <i className="flaticon-star" />
+              <i className="flaticon-star" style={{color:'#F79E36'}}/>
             </span>
           </span>
           <span className="marquee-inner left">
-            <span className="marquee-item">Italian pizza</span>
+            <span className="marquee-item" style={{color:'#BBFA00'}}>Freshness</span>
             <span className="marquee-item">
-              <i className="flaticon-star" />
+              <i className="flaticon-star" style={{color:'#F79E36'}}/>
             </span>
-            <span className="marquee-item">delicious foods</span>
+            <span className="marquee-item" style={{color:'#F79E36'}}>Nutritious </span>
             <span className="marquee-item">
-              <i className="flaticon-star" />
+              <i className="flaticon-star" style={{color:'#0C6D20'}}/>
             </span>
-            <span className="marquee-item">burger king</span>
+            <span className="marquee-item" style={{color:'#F79E36'}}>Delicious </span>
             <span className="marquee-item">
-              <i className="flaticon-star" />
+              <i className="flaticon-star" style={{color:'#F79E36'}}/>
+            </span>
+          </span>
+          <span className="marquee-inner left">
+            <span className="marquee-item" style={{color:'#0C6D20'}}>Italian pizza</span>
+            <span className="marquee-item">
+              <i className="flaticon-star" style={{color:'#F79E36'}}/>
+            </span>
+            <span className="marquee-item" style={{color:'#0C6D20'}}>delicious foods</span>
+            <span className="marquee-item">
+              <i className="flaticon-star" style={{color:'#F79E36'}}/>
+            </span>
+            <span className="marquee-item" style={{color:'#0C6D20'}}>burger king</span>
+            <span className="marquee-item">
+              <i className="flaticon-star" style={{color:'#F79E36'}}/>
             </span>
           </span>
         </span>
@@ -194,6 +214,164 @@ const page = () => {
           </div>
         </div>
       </div>
+
+
+
+ <section className="why-choose-area bgc-lighter pt-240 rpt-150 pb-100 rpb-70 rel z-1">
+        <span className="marquee-wrap style-two">
+          <span className="marquee-inner left">Why choose Us</span>
+          <span className="marquee-inner left">Why choose Us</span>
+          <span className="marquee-inner left">Why choose Us</span>
+        </span>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div
+                className="why-choose-content rmb-30"
+                data-aos="fade-up"
+                data-aos-duration={1500}
+                data-aos-offset={50}
+              >
+                <div className="section-title mb-25">
+                  {/* <span className="sub-title mb-5">Why choose us</span> */}
+                  <h2>Why Choose Pulse?</h2>
+                </div>
+                <p>
+                At Pulse, we believe eating healthy should be simple, satisfying, and sustainable. Our meals are crafted by expert chefs, backed by nutritional science, and tailored for real life.
+                </p>
+                <p>Whether you're chasing fitness goals or simply want to feel your best — Pulse delivers fresh, wholesome meals that never compromise on taste.</p>
+                <div className="about-btn-author mb-60">
+                  <Link href="about" className="theme-btn">
+                    learn more us <i className="far fa-arrow-alt-right" />
+                  </Link>
+                  {/* <div className="author">
+                    <img src="assets/images/about/author.jpg" alt="Author" />
+                    <h6>
+                      Ben A. Conners / <span>CEO &amp; Founder</span>
+                    </h6>
+                  </div> */}
+                </div>
+                <div className="row">
+                  <div className="col-sm-4 col-6">
+                    <div className="counter-item counter-text-wrap">
+                      <span
+                        className="count-text "
+                        data-speed={3000}
+                        data-stop={98}
+                      >
+                        <Counter end={98} />%
+                      </span>
+                      <span className="counter-title"> Customer Satisfaction</span>
+                    </div>
+                  </div>
+                  <div className="col-sm-4 col-6">
+                    <div className="counter-item counter-text-wrap">
+                      <span
+                        className="count-text plus"
+                        data-speed={3000}
+                        data-stop={95}
+                      >
+                        <Counter end={95} />%
+                      </span>
+                      <span className="counter-title">On-Time Deliveries</span>
+                    </div>
+                  </div>
+                  <div className="col-sm-4 col-6">
+                    <div className="counter-item counter-text-wrap">
+                      <span
+                        className="count-text plus"
+                        data-speed={3000}
+                        data-stop={100}
+                      >
+                        <Counter end={100} />%
+                      </span>
+                      <span className="counter-title">Chef-Crafted Recipes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="row">
+                <div
+                  className="col-sm-6"
+                  data-aos="fade-up"
+                  data-aos-delay={50}
+                  data-aos-duration={1500}
+                  data-aos-offset={50}
+                >
+                  <div className="service-item">
+                    <div className="icon">
+                      <i className="flaticon-recommended-food" />
+                    </div>
+                    <h4>
+                      <Link href="menu-burger">Best Quality Food</Link>
+                    </h4>
+                    <p>
+                      Sed ut perspiciatis unde omnis este natus sit voluptatem
+                    </p>
+                  </div>
+                  <div className="service-item">
+                    <div className="icon">
+                      <i className="flaticon-fast-delivery" />
+                    </div>
+                    <h4>
+                      <Link href="menu-burger">fast food delivery</Link>
+                    </h4>
+                    <p>
+                      Sed ut perspiciatis unde omnis este natus sit voluptatem
+                    </p>
+                  </div>
+                </div>
+                <div
+                  className="col-sm-6"
+                  data-aos="fade-up"
+                  data-aos-delay={100}
+                  data-aos-duration={1500}
+                  data-aos-offset={50}
+                >
+                  <div className="service-item mt-30 rmt-0">
+                    <div className="icon">
+                      <i className="flaticon-cashback" />
+                    </div>
+                    <h4>
+                      <Link href="menu-burger">money back guarantee</Link>
+                    </h4>
+                    <p>
+                      Sed ut perspiciatis unde omnis este natus sit voluptatem
+                    </p>
+                  </div>
+                  <div className="service-item">
+                    <div className="icon">
+                      <i className="flaticon-dish" />
+                    </div>
+                    <h4>
+                      <Link href="menu-burger">100% natural food</Link>
+                    </h4>
+                    <p>
+                      Sed ut perspiciatis unde omnis este natus sit voluptatem
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="headline-shapes">
+          <div className="shape one">
+            <img src="assets/images/shapes/chillies.png" alt="Shape" />
+          </div>
+          <div className="shape two">
+            <img src="assets/images/shapes/tomato.png" alt="Shape" />
+          </div>
+          <div className="shape three">
+            <img src="assets/images/shapes/pizza.png" alt="Shape" />
+          </div>
+        </div>
+      </section>
+
+
+
       {/* Headline Area end */}
       {/* About Us Area start */}
       {/* <section className="about-us-area pt-130 rpt-85 pb-100 rpb-70 rel z-1">
@@ -465,48 +643,48 @@ const page = () => {
 
       {/* Offer Area end */}
       {/* Headline area start */}
-      <div className="headline-area pt-120 rpt-90 rel z-1">
+       <div className="headline-area pt-10 rpt-90 rel z-1 mb-120">
         <span className="marquee-wrap">
           <span className="marquee-inner left">
-            <span className="marquee-item">Italian pizza</span>
+            <span className="marquee-item" style={{color:'#BBFA00'}}>Freshness</span>
             <span className="marquee-item">
-              <i className="flaticon-star" />
+              <i className="flaticon-star" style={{color:'#F79E36'}}/>
             </span>
-            <span className="marquee-item">delicious foods</span>
+            <span className="marquee-item"style={{color:'#094D26'}}>Nutritious </span>
             <span className="marquee-item">
-              <i className="flaticon-star" />
+              <i className="flaticon-star" style={{color:'#0C6D20'}}/>
             </span>
-            <span className="marquee-item">burger king</span>
+            <span className="marquee-item" style={{color:'#F79E36'}}>Delicious </span>
             <span className="marquee-item">
-              <i className="flaticon-star" />
-            </span>
-          </span>
-          <span className="marquee-inner left">
-            <span className="marquee-item">Italian pizza</span>
-            <span className="marquee-item">
-              <i className="flaticon-star" />
-            </span>
-            <span className="marquee-item">delicious foods</span>
-            <span className="marquee-item">
-              <i className="flaticon-star" />
-            </span>
-            <span className="marquee-item">burger king</span>
-            <span className="marquee-item">
-              <i className="flaticon-star" />
+              <i className="flaticon-star" style={{color:'#F79E36'}}/>
             </span>
           </span>
           <span className="marquee-inner left">
-            <span className="marquee-item">Italian pizza</span>
+            <span className="marquee-item" style={{color:'#BBFA00'}}>Freshness</span>
             <span className="marquee-item">
-              <i className="flaticon-star" />
+              <i className="flaticon-star" style={{color:'#F79E36'}}/>
             </span>
-            <span className="marquee-item">delicious foods</span>
+            <span className="marquee-item" style={{color:'#F79E36'}}>Nutritious </span>
             <span className="marquee-item">
-              <i className="flaticon-star" />
+              <i className="flaticon-star" style={{color:'#0C6D20'}}/>
             </span>
-            <span className="marquee-item">burger king</span>
+            <span className="marquee-item" style={{color:'#F79E36'}}>Delicious </span>
             <span className="marquee-item">
-              <i className="flaticon-star" />
+              <i className="flaticon-star" style={{color:'#F79E36'}}/>
+            </span>
+          </span>
+          <span className="marquee-inner left">
+            <span className="marquee-item" style={{color:'#0C6D20'}}>Italian pizza</span>
+            <span className="marquee-item">
+              <i className="flaticon-star" style={{color:'#F79E36'}}/>
+            </span>
+            <span className="marquee-item" style={{color:'#0C6D20'}}>delicious foods</span>
+            <span className="marquee-item">
+              <i className="flaticon-star" style={{color:'#F79E36'}}/>
+            </span>
+            <span className="marquee-item" style={{color:'#0C6D20'}}>burger king</span>
+            <span className="marquee-item">
+              <i className="flaticon-star" style={{color:'#F79E36'}}/>
             </span>
           </span>
         </span>
@@ -519,6 +697,10 @@ const page = () => {
           </div>
         </div>
       </div>
+
+
+
+
       {/* Headline Area end */}
       {/* Popular Menu Area start */}
       <section className="popular-menu-area pt-105 rpt-85 pb-100 rpb-70 rel z-1">
@@ -929,159 +1111,7 @@ const page = () => {
       </div> */}
       {/* Gallery Area End */}
       {/* Why choose Us Area start */}
-      <section className="why-choose-area bgc-lighter pt-240 rpt-150 pb-100 rpb-70 rel z-1">
-        <span className="marquee-wrap style-two">
-          <span className="marquee-inner left">Why choose Us</span>
-          <span className="marquee-inner left">Why choose Us</span>
-          <span className="marquee-inner left">Why choose Us</span>
-        </span>
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div
-                className="why-choose-content rmb-30"
-                data-aos="fade-up"
-                data-aos-duration={1500}
-                data-aos-offset={50}
-              >
-                <div className="section-title mb-25">
-                  <span className="sub-title mb-5">Why choose us</span>
-                  <h2>We Offer quality service That Customers Needs</h2>
-                </div>
-                <p>
-                  Welcome too restaurant, where culinary excellence meets warm
-                  hospitality in every dish we serve. Nestled in the heart of
-                  City Name our eatery invites you on a journey
-                </p>
-                <div className="about-btn-author mb-60">
-                  <Link href="about" className="theme-btn">
-                    learn more us <i className="far fa-arrow-alt-right" />
-                  </Link>
-                  <div className="author">
-                    <img src="assets/images/about/author.jpg" alt="Author" />
-                    <h6>
-                      Ben A. Conners / <span>CEO &amp; Founder</span>
-                    </h6>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-sm-4 col-6">
-                    <div className="counter-item counter-text-wrap">
-                      <span
-                        className="count-text k-plus"
-                        data-speed={3000}
-                        data-stop={34}
-                      >
-                        <Counter end={34} />
-                      </span>
-                      <span className="counter-title">Organic Planting</span>
-                    </div>
-                  </div>
-                  <div className="col-sm-4 col-6">
-                    <div className="counter-item counter-text-wrap">
-                      <span
-                        className="count-text plus"
-                        data-speed={3000}
-                        data-stop={356}
-                      >
-                        <Counter end={356} />
-                      </span>
-                      <span className="counter-title">Passionate Chef’s</span>
-                    </div>
-                  </div>
-                  <div className="col-sm-4 col-6">
-                    <div className="counter-item counter-text-wrap">
-                      <span
-                        className="count-text plus"
-                        data-speed={3000}
-                        data-stop={853}
-                      >
-                        <Counter end={853} />
-                      </span>
-                      <span className="counter-title">Favourite Dishes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="row">
-                <div
-                  className="col-sm-6"
-                  data-aos="fade-up"
-                  data-aos-delay={50}
-                  data-aos-duration={1500}
-                  data-aos-offset={50}
-                >
-                  <div className="service-item">
-                    <div className="icon">
-                      <i className="flaticon-recommended-food" />
-                    </div>
-                    <h4>
-                      <Link href="menu-burger">Best Quality Food</Link>
-                    </h4>
-                    <p>
-                      Sed ut perspiciatis unde omnis este natus sit voluptatem
-                    </p>
-                  </div>
-                  <div className="service-item">
-                    <div className="icon">
-                      <i className="flaticon-fast-delivery" />
-                    </div>
-                    <h4>
-                      <Link href="menu-burger">fast food delivery</Link>
-                    </h4>
-                    <p>
-                      Sed ut perspiciatis unde omnis este natus sit voluptatem
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className="col-sm-6"
-                  data-aos="fade-up"
-                  data-aos-delay={100}
-                  data-aos-duration={1500}
-                  data-aos-offset={50}
-                >
-                  <div className="service-item mt-30 rmt-0">
-                    <div className="icon">
-                      <i className="flaticon-cashback" />
-                    </div>
-                    <h4>
-                      <Link href="menu-burger">money back guarantee</Link>
-                    </h4>
-                    <p>
-                      Sed ut perspiciatis unde omnis este natus sit voluptatem
-                    </p>
-                  </div>
-                  <div className="service-item">
-                    <div className="icon">
-                      <i className="flaticon-dish" />
-                    </div>
-                    <h4>
-                      <Link href="menu-burger">100% natural food</Link>
-                    </h4>
-                    <p>
-                      Sed ut perspiciatis unde omnis este natus sit voluptatem
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="headline-shapes">
-          <div className="shape one">
-            <img src="assets/images/shapes/chillies.png" alt="Shape" />
-          </div>
-          <div className="shape two">
-            <img src="assets/images/shapes/tomato.png" alt="Shape" />
-          </div>
-          <div className="shape three">
-            <img src="assets/images/shapes/pizza.png" alt="Shape" />
-          </div>
-        </div>
-      </section>
+     
       {/* Why choose Us Area end */}
       {/* Headline area start */}
       <div className="headline-area bgc-black pt-120 rpt-90 rel z-2">
