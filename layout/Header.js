@@ -180,7 +180,7 @@ const MobileMenu = () => {
                     }`}
                   >
                     <ul className="navigation clearfix">
-                      <li className="dropdown" style={activeLi("home")}>
+                      {/* <li className="dropdown" style={activeLi("home")}>
                         <a href="#">Home</a>
                         <ul>
                           <li>
@@ -309,6 +309,19 @@ const MobileMenu = () => {
                         >
                           <span className="far fa-angle-down" />
                         </div>
+                      </li> */}
+                      
+                      <li>
+                         <Link href="/">Home</Link>
+                      </li>
+                      <li>
+                         <Link href="/about">about</Link>
+                      </li>
+                      <li>
+                           <Link href="/">Subscriptions </Link>
+                      </li>
+                      <li>
+                      <Link href="/menu">Menu</Link>
                       </li>
                       <li>
                         <Link href="contact">Contact</Link>
