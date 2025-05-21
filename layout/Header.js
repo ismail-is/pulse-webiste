@@ -141,7 +141,7 @@ const MobileMenu = () => {
                 <div className="logo">
                   <Link href="/">
                     <img
-                      src="assets/images/logos/logo.png"
+                      src="assets/images/allimg/logo/pulslogo.png"
                       alt="Logo"
                       title="Logo"
                     />
@@ -155,7 +155,7 @@ const MobileMenu = () => {
                     <div className="mobile-logo">
                       <Link href="/">
                         <img
-                          src="assets/images/logos/logo.png"
+                          src="assets/images/allimg/logo/pulslogo.png"
                           alt="Logo"
                           title="Logo"
                         />
@@ -375,7 +375,7 @@ const Header = () => {
                 <div className="logo">
                   <Link href="/">
                     <img
-                      src="assets/images/logos/logo.png"
+                      src="assets/images/allimg/logo/pulslogo.png"
                       alt="Logo"
                       title="Logo"
                     />
@@ -389,7 +389,7 @@ const Header = () => {
                     <div className="mobile-logo">
                       <Link href="/">
                         <img
-                          src="assets/images/logos/logo.png"
+                          src="assets/images/allimg/logo/pulslogo.png"
                           alt="Logo"
                           title="Logo"
                         />
