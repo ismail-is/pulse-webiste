@@ -340,9 +340,9 @@ const MobileMenu = () => {
               {/* Menu Button */}
               <div className="menu-btns">
                 <button>
-                  <i className="far fa-shopping-cart" /> <span>2</span>
+                  {/* <i className="far fa-shopping-cart" /> <span>2</span> */}
                 </button>
-                <Link href="contact" className="theme-btn">
+                <Link href="contact" className="theme-btn style-two">
                   DOWNLOAD APP<i className="far fa-arrow-alt-right" />
                 </Link>
                 {/* menu sidbar */}
@@ -573,7 +573,7 @@ const Header = () => {
                 {/* <button>
                   <i className="far fa-shopping-cart" /> <span>2</span>
                 </button> */}
-                <Link href="contact" className="theme-btn">
+                <Link href="contact" className="theme-btn style-two">
                  DOWNLOAD APP<i className="far fa-arrow-alt-right" />
                 </Link>
                 {/* menu sidbar */}

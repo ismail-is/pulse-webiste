@@ -77,7 +77,7 @@ const page = () => {
 <section
         className="hero-area-three pt-250 pb-220 rpb-100 rel z-1"
         style={{
-          backgroundImage: "url(assets/images/background/hero-three.png)",
+          backgroundImage: "url(assets/images/allimg/home/backbg.png)",
         }}
       >
         <span className="marquee-wrap style-two text-white">
@@ -126,7 +126,7 @@ const page = () => {
                 data-aos-offset={50}
               >
                 <img
-  src="https://freshhouse.com.sa/freshhouse_website_extended/static/src/img/homepage_img/breakfast-min.png"
+  src="assets/images/allimg/home/mainbg1.png"
   alt="CTA"
   style={{
     animation: 'spin 20s linear infinite',
@@ -149,7 +149,7 @@ const page = () => {
 
 
 {/* custome */}
-<MenuOder/>
+{/* <MenuOder/> */}
 {/* custome */}
 
 
@@ -163,7 +163,7 @@ const page = () => {
       <div className="headline-area pt-10 rpt-90 rel z-1 mb-120">
         <span className="marquee-wrap">
           <span className="marquee-inner left">
-            <span className="marquee-item" style={{color:'#BBFA00'}}>Freshness</span>
+            <span className="marquee-item" style={{color:'#014820'}}>Freshness</span>
             <span className="marquee-item">
               <i className="flaticon-star" style={{color:'#F79E36'}}/>
             </span>
@@ -177,7 +177,7 @@ const page = () => {
             </span>
           </span>
           <span className="marquee-inner left">
-            <span className="marquee-item" style={{color:'#BBFA00'}}>Freshness</span>
+            <span className="marquee-item" style={{color:'#014820'}}>Freshness</span>
             <span className="marquee-item">
               <i className="flaticon-star" style={{color:'#F79E36'}}/>
             </span>
@@ -305,10 +305,10 @@ const page = () => {
                       <i className="flaticon-recommended-food" />
                     </div>
                     <h4>
-                      <Link href="menu-burger">Best Quality Food</Link>
+                      <Link href="menu-burger"> Chef-Crafted, Nutrition-Backed</Link>
                     </h4>
                     <p>
-                      Sed ut perspiciatis unde omnis este natus sit voluptatem
+                     Delicious meals designed by chefs and approved by experts.
                     </p>
                   </div>
                   <div className="service-item">
@@ -316,10 +316,10 @@ const page = () => {
                       <i className="flaticon-fast-delivery" />
                     </div>
                     <h4>
-                      <Link href="menu-burger">fast food delivery</Link>
+                      <Link href="menu-burger">Freshness You Can Taste</Link>
                     </h4>
                     <p>
-                      Sed ut perspiciatis unde omnis este natus sit voluptatem
+                     Prepared daily using real, high-quality ingredients.
                     </p>
                   </div>
                 </div>
@@ -335,10 +335,10 @@ const page = () => {
                       <i className="flaticon-cashback" />
                     </div>
                     <h4>
-                      <Link href="menu-burger">money back guarantee</Link>
+                      <Link href="menu-burger">Tailored for Your Lifestyle</Link>
                     </h4>
                     <p>
-                      Sed ut perspiciatis unde omnis este natus sit voluptatem
+                      Meal plans that match your goals and routine.
                     </p>
                   </div>
                   <div className="service-item">
@@ -346,10 +346,10 @@ const page = () => {
                       <i className="flaticon-dish" />
                     </div>
                     <h4>
-                      <Link href="menu-burger">100% natural food</Link>
+                      <Link href="menu-burger">Convenience Without Compromise</Link>
                     </h4>
                     <p>
-                      Sed ut perspiciatis unde omnis este natus sit voluptatem
+                    Healthy food delivered on time, every time.
                     </p>
                   </div>
                 </div>
@@ -555,89 +555,7 @@ const page = () => {
           </div>
         </div>
       </section> */}
-      <section className="cta-area-two bgc-black text-white py-100 rel z-1">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-4">
-              <div
-                className="cta-content-two mt-20 rmt-0"
-                data-aos="fade-up"
-                data-aos-duration={1500}
-                data-aos-offset={50}
-              >
-                <div className="section-title text-white mb-20">
-                  <h2>Need Good Food Steak and Quality Restaurant</h2>
-                </div>
-                <hr className="mt-35 mb-45" />
-                <p>
-                  Grilling steak to perfection both an art and science requiring
-                  blend technique timing quality ingredients the process begins
-                  with selecting the right
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div
-                className="cta-two-image rmt-55 rmb-75"
-                data-aos="fade-up"
-                data-aos-delay={50}
-                data-aos-duration={1500}
-                data-aos-offset={50}
-              >
-                <img
-  src="assets/images/cta/cta-two.png"
-  alt="CTA"
-  style={{
-    animation: 'spin 20s linear infinite',
-    transformOrigin: 'center',
-  }}
-/>
-
-                <div className="badge">
-                  <img src="assets/images/cta/cta-two-badge.png" alt="Badge" />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div
-                className="cta-content-list"
-                data-aos="fade-up"
-                data-aos-delay={100}
-                data-aos-duration={1500}
-                data-aos-offset={50}
-              >
-                <h5>
-                  25 + Years We Provide Quality foods Get 20% Off For Every
-                  Foods
-                </h5>
-                <ul className="list-style-one mt-30 mb-40">
-                  <li>Best Quality Natural &amp; Fresh Food</li>
-                  <li>Experience &amp; Quality Chefs</li>
-                  <li>Awards Winning Restaurant</li>
-                  <li>Healthy &amp; Organic Foods</li>
-                </ul>
-                <Link href="contact" className="theme-btn">
-                  Book A Table <i className="far fa-arrow-alt-right" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="cta-two-shapes">
-          <div className="shape one">
-            <img src="assets/images/shapes/cta-two1.png" alt="Shape" />
-          </div>
-          <div className="shape two">
-            <img src="assets/images/shapes/cta-two2.png" alt="Shape" />
-          </div>
-          <div className="shape three">
-            <img src="assets/images/shapes/cta-two3.png" alt="Shape" />
-          </div>
-          <div className="shape four">
-            <img src="assets/images/shapes/cta-two4.png" alt="Shape" />
-          </div>
-        </div>
-      </section>
+     
 
 
 
@@ -646,7 +564,7 @@ const page = () => {
        <div className="headline-area pt-10 rpt-90 rel z-1 mb-120">
         <span className="marquee-wrap">
           <span className="marquee-inner left">
-            <span className="marquee-item" style={{color:'#BBFA00'}}>Freshness</span>
+            <span className="marquee-item" style={{color:'#014820'}}>Freshness</span>
             <span className="marquee-item">
               <i className="flaticon-star" style={{color:'#F79E36'}}/>
             </span>
@@ -660,7 +578,7 @@ const page = () => {
             </span>
           </span>
           <span className="marquee-inner left">
-            <span className="marquee-item" style={{color:'#BBFA00'}}>Freshness</span>
+            <span className="marquee-item" style={{color:'#014820'}}>Freshness</span>
             <span className="marquee-item">
               <i className="flaticon-star" style={{color:'#F79E36'}}/>
             </span>
@@ -715,8 +633,7 @@ const page = () => {
               >
                 <span className="sub-title mb-5 " style={{textAlign:'left'}}>popular menu</span>
                 <h2 style={{textAlign:'left'}}>
-                  we provide exclusive food based on usa explore our popular
-                  food
+                  Discover Our Menu
                 </h2>
               </div>
             </div>
@@ -733,77 +650,122 @@ const page = () => {
               data-aos-duration={1500}
               data-aos-offset={50}
             >
+              <h3 className="sub-title mb-6" style={{textAlign:'center',textTransform:'capitalize',color:'#014820',fontWeight:'700'}}>Pasta </h3>
               <div className="food-item" id="foodItem1">
                 <div className="content">
                   <div className="name-desc">
-                    <h5>Red king Crab</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5>White sauce pasta</h5>
+                    <p>Creamy, cheesy, and rich with a smooth finish</p>
                   </div>
-                  <div className="price">
+                  {/* <div className="price">
                     <span>$25</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/20.png" alt="Food Image" />
                 </div>
               </div>
               <div className="food-item" id="foodItem2">
                 <div className="content">
                   <div className="name-desc">
-                    <h5>Alaskan king Crab</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5>Red sauce pasta</h5>
+                    <p>Tangy tomato blend with herbs and seasoning</p>
                   </div>
-                  <div className="price">
+                  {/* <div className="price">
                     <span>$10</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/5.png" alt="Food Image" />
                 </div>
               </div>
               <div className="food-item" id="foodItem3">
                 <div className="content">
                   <div className="name-desc">
-                    <h5>Pizza</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5>Green sauce pasta</h5>
+                    <p>Fresh basil pesto with a creamy twist</p>
                   </div>
-                  <div className="price">
+                  {/* <div className="price">
                     <span>$22</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/4.png" alt="Food Image" />
                 </div>
               </div>
               <div className="food-item" id="foodItem4">
                 <div className="content">
                   <div className="name-desc">
-                    <h5>Hamburger</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5>Beef bolognese spegahetti pasta</h5>
+                    <p>Slow-cooked minced beef in classic Italian sauce</p>
                   </div>
-                  <div className="price">
+                  {/* <div className="price">
                     <span>$43</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/19.png" alt="Food Image" />
                 </div>
               </div>
+
+
+              
               <div className="food-item mb-30" id="foodItem5">
                 <div className="content">
                   <div className="name-desc">
-                    <h5>chicken soup</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5>Mix sauce spaghetti pasta</h5>
+                    <p>White and red sauces blended for bold flavor</p>
                   </div>
-                  <div className="price">
+                  {/* <div className="price">
                     <span>$77</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/18.png" alt="Food Image" />
+                </div>
+              </div>
+              <div className="food-item mb-30" id="foodItem5" style={{marginTop:'-30px'}}>
+                <div className="content">
+                  <div className="name-desc">
+                    <h5>Signature spegatie pasta</h5>
+                    <p>Our chef’s special recipe with signature spices</p>
+                  </div>
+                  {/* <div className="price">
+                    <span>$77</span>
+                  </div> */}
+                </div>
+                <div className="image">
+                  <img src="assets/images/allimg/dishpng/17.png" alt="Food Image" />
+                </div>
+              </div>
+              <div className="food-item mb-30" id="foodItem5" style={{marginTop:'-30px'}}>
+                <div className="content">
+                  <div className="name-desc">
+                    <h5>Special sauce pasta </h5>
+                    <p>A surprise mix of sauces and bold flavors</p>
+                  </div>
+                  {/* <div className="price">
+                    <span>$77</span>
+                  </div> */}
+                </div>
+                <div className="image">
+                  <img src="assets/images/allimg/dishpng/16.png" alt="Food Image" />
                 </div>
               </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
              <div
@@ -813,244 +775,349 @@ const page = () => {
               data-aos-duration={1500}
               data-aos-offset={50}
             >
+               <h3 className="sub-title mb-6" style={{textAlign:'center',textTransform:'capitalize',color:'#014820',fontWeight:'700'}}>Pizza </h3>
               <div className="food-item" id="foodItem5">
                 <div className="content">
                   <div className="name-desc">
-                    <h5>Red king Crab</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5>Peproni pizza</h5>
+                    <p>Crispy pepperoni layered over cheesy perfection</p>
                   </div>
-                  <div className="price">
+                  {/* <div className="price">
                     <span>$25</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/15.png" alt="Food Image" />
                 </div>
               </div>
-              <div className="food-item" id="foodItem4">
-                <div className="content">
-                  <div className="name-desc">
-                    <h5>Alaskan king Crab</h5>
-                    <p>Native to the icy waters of the Pacific</p>
-                  </div>
-                  <div className="price">
-                    <span>$10</span>
-                  </div>
-                </div>
-                <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
-                </div>
-              </div>
+              
               <div className="food-item" id="foodItem3">
                 <div className="content">
                   <div className="name-desc">
-                    <h5>Pizza</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5>Margarita pizza</h5>
+                    <p>Classic tomato, mozzarella, and fresh basil combo</p>
                   </div>
-                  <div className="price">
+                  {/* <div className="price">
                     <span>$22</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="image">
                   <img src="assets/images/food/food1.png" alt="Food Image" />
+                </div>
+              </div>
+
+              <div className="food-item" id="foodItem2">
+                <div className="content">
+                  <div className="name-desc">
+                    <h5>Alfrado pizza</h5>
+                    <p>Our house favorite with a secret twist</p>
+                  </div>
+                  {/* <div className="price">
+                    <span>$43</span>
+                  </div> */}
+                </div>
+                <div className="image">
+                  <img src="assets/images/allimg/dishpng/13.png" alt="Food Image" />
                 </div>
               </div>
               <div className="food-item" id="foodItem2">
                 <div className="content">
                   <div className="name-desc">
-                    <h5>Hamburger</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5> Beef Ballistic Pizza</h5>
+                    <p>Loaded with spicy beef and bold flavors</p>
                   </div>
-                  <div className="price">
+                  {/* <div className="price">
                     <span>$43</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/13.png" alt="Food Image" />
                 </div>
               </div>
-              <div className="food-item mb-30" id="foodItem1">
+              <div className="food-item" id="foodItem2">
                 <div className="content">
                   <div className="name-desc">
-                    <h5>chicken soup</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5> Amadio’s Pizza</h5>
+                    <p>Our house favorite with a secret twist</p>
                   </div>
-                  <div className="price">
-                    <span>$77</span>
-                  </div>
+                  {/* <div className="price">
+                    <span>$43</span>
+                  </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/13.png" alt="Food Image" />
+                </div>
+              </div>
+
+
+              <div className="food-item mb-30" id="foodItem1" >
+                <div className="content">
+                  <div className="name-desc">
+                    <h5>Garlic Chicken Pizza</h5>
+                    <p>Grilled chicken with a punch of garlic</p>
+                  </div>
+                  {/* <div className="price">
+                    <span>$77</span>
+                  </div> */}
+                </div>
+                <div className="image">
+                  <img src="assets/images/allimg/dishpng/12.png" alt="Food Image" />
+                </div>
+              </div>
+              <div className="food-item mb-30" id="foodItem1" style={{marginTop:'-30px'}}>
+                <div className="content">
+                  <div className="name-desc">
+                    <h5>Mix Veg Pizza</h5>
+                    <p>A colorful mix of seasoned, fresh vegetables</p>
+                  </div>
+                  {/* <div className="price">
+                    <span>$77</span>
+                  </div> */}
+                </div>
+                <div className="image">
+                  <img src="assets/images/allimg/dishpng/12.png" alt="Food Image" />
                 </div>
               </div>
             </div>
 
 
 
-           
+ {/* Salad */}          
             <div
               className="col-xl-3 col-lg-6 z-3"
               data-aos="fade-up"
               data-aos-duration={1500}
               data-aos-offset={50}
             >
+               <h3 className="sub-title mb-6" style={{textAlign:'center',textTransform:'capitalize',color:'#014820',fontWeight:'700'}}>Salad </h3>
               <div className="food-item"  id="foodItem1">
                 <div className="content">
                   <div className="name-desc" >
-                    <h5>Red king Crab</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5> Halloumi Salad</h5>
+                    <p>Grilled halloumi on crisp greens and veggies</p>
                   </div>
-                  <div className="price">
+                  {/* <div className="price">
                     <span>$25</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/9.png" alt="Food Image" />
                 </div>
               </div>
               <div className="food-item"  id="foodItem2">
                 <div className="content">
                   <div className="name-desc">
-                    <h5>Alaskan king Crab</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5>Italian Salad</h5>
+                    <p>Olives, cherry tomatoes, herbs, and vinaigrette dressing</p>
                   </div>
-                  <div className="price">
+                  {/* <div className="price">
                     <span>$10</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/8.png" alt="Food Image" />
                 </div>
               </div>
               <div className="food-item"  id="foodItem3">
                 <div className="content">
                   <div className="name-desc">
-                    <h5>Pizza</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5>Roca Salad</h5>
+                    <p>Fresh arugula tossed with tangy dressing</p>
                   </div>
-                  <div className="price">
+                  {/* <div className="price">
                     <span>$22</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/7.png" alt="Food Image" />
                 </div>
               </div>
               <div className="food-item"  id="foodItem4">
                 <div className="content">
                   <div className="name-desc">
-                    <h5>Hamburger</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5>Mix Veg Salad</h5>
+                    <p>Seasonal vegetables with a light citrus dressing</p>
                   </div>
-                  <div className="price">
+                  {/* <div className="price">
                     <span>$43</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/6.png" alt="Food Image" />
                 </div>
               </div>
               <div className="food-item mb-30"  id="foodItem5">
                 <div className="content">
                   <div className="name-desc">
-                    <h5>chicken soup</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5>Chicken Malai Salad</h5>
+                    <p>Creamy malai chicken on a fresh salad bed</p>
                   </div>
-                  <div className="price">
+                  {/* <div className="price">
                     <span>$77</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/1.png" alt="Food Image" />
                 </div>
               </div>
             </div>
+{/* Salad */}
 
-
-
+{/* Bread Toasts */}
              <div
               className="col-xl-3 col-lg-6 z-2"
               data-aos="fade-up"
               data-aos-duration={1500}
               data-aos-offset={50}
             >
+               <h3 className="sub-title mb-6" style={{textAlign:'center',textTransform:'capitalize',color:'#014820',fontWeight:'700'}}>Bread Toasts </h3>
               <div className="food-item" id="foodItem5">
                 <div className="content">
                   <div className="name-desc" >
-                    <h5>Red king Crab</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5>Chicken Cheese Garlic Bread</h5>
+                    <p>Cheesy garlic toast topped with tender chicken</p>
                   </div>
-                  <div className="price">
+                  {/* <div className="price">
                     <span>$25</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/2.png" alt="Food Image" />
                 </div>
               </div>
               <div className="food-item"  id="foodItem4">
                 <div className="content">
                   <div className="name-desc">
-                    <h5>Alaskan king Crab</h5>
-                    <p>Native to the icy waters of the Pacific</p>
+                    <h5>Cheese Garlic Bread</h5>
+                    <p>Crispy bread topped with gooey garlic cheese</p>
                   </div>
-                  <div className="price">
+                  {/* <div className="price">
                     <span>$10</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/3.png" alt="Food Image" />
                 </div>
               </div>
-              <div className="food-item"  id="foodItem3">
-                <div className="content">
-                  <div className="name-desc">
-                    <h5>Pizza</h5>
-                    <p>Native to the icy waters of the Pacific</p>
-                  </div>
-                  <div className="price">
-                    <span>$22</span>
-                  </div>
-                </div>
-                <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
-                </div>
-              </div>
-              <div className="food-item"  id="foodItem2">
-                <div className="content">
-                  <div className="name-desc">
-                    <h5>Hamburger</h5>
-                    <p>Native to the icy waters of the Pacific</p>
-                  </div>
-                  <div className="price">
-                    <span>$43</span>
-                  </div>
-                </div>
-                <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
-                </div>
-              </div>
-              <div className="food-item mb-30"  id="foodItem1">
-                <div className="content">
-                  <div className="name-desc">
-                    <h5>chicken soup</h5>
-                    <p>Native to the icy waters of the Pacific</p>
-                  </div>
-                  <div className="price">
-                    <span>$77</span>
-                  </div>
-                </div>
-                <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
-                </div>
-              </div>
+             
             </div>
-
+{/* Bread Toasts */}
 
           </div>
         </div>
       </section>
-      <CategoryBanner/>
+
+
+
+
+ <CategoryBanner/>
+
+
+       <section className="cta-area-two bgc-black text-white py-100 rel z-1">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-4">
+              <div
+                className="cta-content-two mt-20 rmt-0"
+                data-aos="fade-up"
+                data-aos-duration={1500}
+                data-aos-offset={50}
+              >
+                <div className="section-title text-white mb-20">
+                  <h2>Your search for great food ends here</h2>
+                </div>
+                <hr className="mt-35 mb-45" />
+                <p>
+                 From wholesome meals to indulgent bites, Pulse serves up freshness, flavor, and nutrition
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div
+                className="cta-two-image rmt-55 rmb-75"
+                data-aos="fade-up"
+                data-aos-delay={50}
+                data-aos-duration={1500}
+                data-aos-offset={50}
+              >
+                <img
+  src="assets/images/allimg/dishpng/rotate/2.png"
+  alt="CTA"
+  style={{
+    animation: 'spin 20s linear infinite',
+    transformOrigin: 'center',
+  }}
+/>
+
+                <div className="badge">
+                  {/* <img src="assets/images/cta/cta-two-badge.png" alt="Badge" /> */}
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div
+                className="cta-two-image rmt-55 rmb-75"
+                data-aos="fade-up"
+                data-aos-delay={50}
+                data-aos-duration={1500}
+                data-aos-offset={50}
+              >
+                <img
+  src="assets/images/allimg/dishpng/rotate/3.png"
+  alt="CTA"
+  style={{
+    animation: 'spin 20s linear infinite ',
+    transformOrigin: 'center',
+    animationDirection:'reverse'
+  }}
+/>
+
+                <div className="badge">
+                  {/* <img src="assets/images/cta/cta-two-badge.png" alt="Badge" /> */}
+                </div>
+              </div>
+            </div>
+            {/* <div className="col-lg-4">
+              <div
+                className="cta-content-list"
+                data-aos="fade-up"
+                data-aos-delay={100}
+                data-aos-duration={1500}
+                data-aos-offset={50}
+              >
+                <h5>
+                  25 + Years We Provide Quality foods Get 20% Off For Every
+                  Foods
+                </h5>
+                <ul className="list-style-one mt-30 mb-40">
+                  <li>Best Quality Natural &amp; Fresh Food</li>
+                  <li>Experience &amp; Quality Chefs</li>
+                  <li>Awards Winning Restaurant</li>
+                  <li>Healthy &amp; Organic Foods</li>
+                </ul>
+                <Link href="contact" className="theme-btn">
+                  Book A Table <i className="far fa-arrow-alt-right" />
+                </Link>
+              </div>
+            </div> */}
+          </div>
+        </div>
+        <div className="cta-two-shapes">
+          <div className="shape one">
+            <img src="assets/images/shapes/cta-two1.png" alt="Shape" />
+          </div>
+          <div className="shape two">
+            <img src="assets/images/shapes/cta-two2.png" alt="Shape" />
+          </div>
+          <div className="shape three">
+            <img src="assets/images/shapes/cta-two3.png" alt="Shape" />
+          </div>
+          <div className="shape four">
+            <img src="assets/images/shapes/cta-two4.png" alt="Shape" />
+          </div>
+        </div>
+      </section>
+     
       {/* Popular Menu Area end */}
       {/* Gallery Area Start */}
       {/* <div className="gallery-area rel z-1">
@@ -1114,7 +1181,7 @@ const page = () => {
      
       {/* Why choose Us Area end */}
       {/* Headline area start */}
-      <div className="headline-area bgc-black pt-120 rpt-90 rel z-2">
+      {/* <div className="headline-area bgc-black pt-120 rpt-90 rel z-2">
         <span className="marquee-wrap white-text">
           <span className="marquee-inner left">
             <span className="marquee-item">Italian pizza</span>
@@ -1167,10 +1234,10 @@ const page = () => {
             <img src="assets/images/shapes/tomato.png" alt="Shape" />
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Headline Area end */}
       {/* Testimonials Area start */}
-      <section className="testimonials-area bgc-black pt-105 rpt-85 pb-130 rpb-100 rel z-1">
+      {/* <section className="testimonials-area bgc-black pt-105 rpt-85 pb-130 rpb-100 rel z-1">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-7 col-lg-8">
@@ -1195,7 +1262,7 @@ const page = () => {
             <img src="assets/images/shapes/tomato.png" alt="Shape" />
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Testimonials Area end */}
       {/* Call To Action Area start */}
       <section className="cta-area py-100 rel z-1">
@@ -1204,11 +1271,11 @@ const page = () => {
             <div className="col-lg-5 col-md-8">
               <div className="cta-content">
                 <div className="section-title text-white mb-20">
-                  <span className="sub-title mb-5">Need any food?</span>
-                  <h2>Looking for best quality food or restaurant?</h2>
+                  {/* <span className="sub-title mb-5">Need any food?</span> */}
+                  <h2>our search for great food ends here</h2>
                 </div>
                 <Link href="contact" className="theme-btn style-two">
-                  get a quote <i className="far fa-arrow-alt-right" />
+                 Order Now  <i className="far fa-arrow-alt-right" />
                 </Link>
                 <div
                   className="cta-badge"
