@@ -1028,11 +1028,11 @@ const page = () => {
               >
                 
                 <div className="section-title text-white mb-20">
-                    <div style={{ textAlign: "center" }}>
+                    <div style={{ textAlign: "left" }}>
   <img
     src="assets/images/allimg/logo/pulslogo.png"
     alt="Good Food"
-    style={{ maxWidth: "100%", height: "auto" }}
+    style={{ maxWidth: "100%", height: "50px"}}
   />
 </div>
 
