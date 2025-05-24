@@ -86,8 +86,8 @@ const MenuOder = () => {
                 <section className="s_text_block">
                   <div className="container">
                     {['breakfast', 'lunch', 'dinner', 'salad', 'snack'].map((mealType) => (
-                      <div className="row align-items-center mb-4" key={mealType}>
-                        <div className="col-lg-3 col-md-2">
+                      <div className="row align-items-center mb-4" key={mealType} >
+                        <div className="col-lg-2 col-md-2 " id='mobilegap'>
                           <span className="english-font-dpbreak text-capitalize" style={{color:'black'}}>{mealType}</span>
                         </div>
                         <div className="col-lg-9 col-md-9">
@@ -148,7 +148,7 @@ const MenuOder = () => {
           </div>
 
           {/* Right Side - Meal Image Preview */}
-          <div className="col-lg-4 col-md-12 packages_pricing_img_div pt16 pb16 p-12">
+          <div className="col-lg-4 col-md-12 packages_pricing_img_div pt16 pb16 p-12" style={{zIndex:-1}}>
             <div className="card shadow-sm border-0">
               <div className="card-body text-center">
                 <div
@@ -220,7 +220,7 @@ const MenuOder = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div id="bottom_bar_home" className="row bottom-bar justify-content-between mt-4 mx-auto home-subscription-btn-sec text-center text-md-left mb-10">
+        <div id="bottom_bar_home" className="row bottom-bar justify-content-between mt-4 mx-auto home-subscription-btn-sec text-center text-md-left mb-10" >
           <div className="col-12 col-md-3 mb-2 mb-md-0">
             <p className="english-font-bottombarp">
               Meal Type: <span className="font-weight-bold">{activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}</span>

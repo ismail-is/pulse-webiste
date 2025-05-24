@@ -9,15 +9,16 @@ const OfferCard = () => {
           data-aos-offset={50}
         >
           <div className="offer-card-item">
-            <img src="assets/images/offer/good-food.png" alt="Good Food" />
+            <img src="assets/images/allimg/logo/pulslogo.png" alt="Good Food" />
+            {/* <img src="assets/images/offer/good-food.png" alt="Good Food" /> */}
             {/* <div className="badge">Hot</div> */}
             <div className="image">
               <img src="assets/images/offer/offer-card1.png" alt="Food" />
             </div>
-            <span className="title">Pasta </span>
+            <span className="title">Burger </span>
             <span className="available-item">7+ Pasta  menu items</span>
             <div className="bg-text">
-              <span>Pasta </span> <span>Pasta </span> <span>Pasta Pasta </span>
+              <span>Burger </span> <span>Burger </span> <span>Burger  </span>
             </div>
           </div>
         </div>
@@ -32,7 +33,7 @@ const OfferCard = () => {
           data-aos-offset={50}
         >
           <div className="offer-card-item style-two">
-            <img src="assets/images/offer/good-food.png" alt="Good Food" />
+            <img src="assets/images/allimg/logo/pulslogo.png" alt="Good Food" />
             {/* <div className="badge">-10%</div> */}
             <div className="image">
               <img src="assets/images/offer/offer-card2.png" alt="Food" />
@@ -77,7 +78,7 @@ const OfferCard = () => {
           data-aos-offset={50}
         >
           <div className="offer-card-item">
-            <img src="assets/images/offer/good-food.png" alt="Good Food" />
+            <img src="assets/images/allimg/logo/pulslogo.png" alt="Good Food" />
             {/* <div className="badge">Hot</div> */}
             <div className="image">
               <img src="assets/images/offer/offer-card5.png" alt="Food" />
@@ -103,7 +104,7 @@ const OfferCard = () => {
           data-aos-offset={50}
         >
           <div className="offer-card-item style-two">
-            <img src="assets/images/offer/good-food.png" alt="Good Food" />
+            <img src="assets/images/allimg/logo/pulslogo.png" alt="Good Food" />
             {/* <div className="badge">-15%</div> */}
             <div className="image">
               <img src="assets/images/offer/offer-card4.png" alt="Food" />

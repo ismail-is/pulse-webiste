@@ -593,7 +593,7 @@ const Footer5 = () => {
                   <h5>Location</h5>
                 </div>
                 <p>
-                  1403 Washington Ave, New Orlea ns, LA 70130, United States
+                  Jubail, Saudi Arabia
                 </p>
               </div>
             </div>
@@ -609,13 +609,16 @@ const Footer5 = () => {
                   <h5>contact us</h5>
                 </div>
                 <ul>
-                  <li>
+                  {/* <li>
                     <a href="mailto:wellfood@gmail.com">
                       <u>Pulse@gmail.com</u>
                     </a>
+                  </li> */}
+                    <li>
+                    <a href="tel:+966591202501">+966 5912 02501</a>
                   </li>
                   <li>
-                    <a href="callto:+(1)0987654321">+(1) 098 765 4321</a>
+                    <a href="tel:+966568113417">+966 5681 13417</a>
                   </li>
                 </ul>
               </div>
@@ -633,10 +636,10 @@ const Footer5 = () => {
                 </div>
                 <ul>
                   <li>
-                    Monday – Friday: <span>8am – 4pm</span>
+                    Monday – Saturday: <span>8am - 12 pm</span>
                   </li>
                   <li>
-                    Saturday: <span>8am – 12am</span>
+                    {/* Saturday: <span>8am – 12am</span> */}
                   </li>
                 </ul>
               </div>

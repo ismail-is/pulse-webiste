@@ -77,13 +77,13 @@ const page = () => {
 <section
         className="hero-area-three pt-250 pb-220 rpb-100 rel z-1"
         style={{
-          backgroundImage: "url(assets/images/allimg/home/backbg.png)",
+          backgroundImage: "url(assets/images/allimg/home/backbg.png)" ,
         }}
       >
         <span className="marquee-wrap style-two text-white">
-          <span className="marquee-inner left">Nutritious </span>
-          <span className="marquee-inner left">Nutritious </span>
-          <span className="marquee-inner left">Nutritious </span>
+          <span className="marquee-inner left" >  Nutritious &emsp;</span>
+          <span className="marquee-inner left">  Nutritious &emsp;</span>
+          <span className="marquee-inner left">  Nutritious &emsp;</span>
         </span>
         <div className="container">
           <div className="row align-items-end">
@@ -94,7 +94,7 @@ const page = () => {
                 data-aos-duration={1500}
                 data-aos-offset={50}
               >
-                <h1>  At Your<br/> Door Step</h1>
+                <h1>At Your Door Step</h1>
                 <p>
                   Crafted by chefs, powered by nutrition
                 </p>
@@ -126,11 +126,14 @@ const page = () => {
                 data-aos-offset={50}
               >
                 <img
-  src="assets/images/allimg/home/mainbg1.png"
+  src="assets/images/allimg/dishpng/rotate/3.png"
+  // src="assets/images/allimg/home/mainbg1.png"
   alt="CTA"
   style={{
     animation: 'spin 20s linear infinite',
     transformOrigin: 'center',
+    marginTop:'-50px'
+    
     
   }}
 />
@@ -1010,7 +1013,7 @@ const page = () => {
 
 
 
- <CategoryBanner/>
+ {/* <CategoryBanner/> */}
 
 
        <section className="cta-area-two bgc-black text-white py-100 rel z-1">
@@ -1023,7 +1026,16 @@ const page = () => {
                 data-aos-duration={1500}
                 data-aos-offset={50}
               >
+                
                 <div className="section-title text-white mb-20">
+                    <div style={{ textAlign: "center" }}>
+  <img
+    src="assets/images/allimg/logo/pulslogo.png"
+    alt="Good Food"
+    style={{ maxWidth: "100%", height: "auto" }}
+  />
+</div>
+
                   <h2>Your search for great food ends here</h2>
                 </div>
                 <hr className="mt-35 mb-45" />
