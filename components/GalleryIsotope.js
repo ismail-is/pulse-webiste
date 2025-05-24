@@ -47,7 +47,17 @@ const GalleryIsotope = () => {
             onClick={handleFilterKeyChange("*")}
             data-filter="*"
           >
-            <i className="flaticon-cupcake" />
+            <i className="flaticon-dish" />
+            <span>All </span>
+          </button>
+        </li>
+        <li>
+          <button
+            className={`nav-link ${activeBtn("Pasta ")}`}
+            onClick={handleFilterKeyChange("Pasta ")}
+            data-filter=".Pasta "
+          >
+            <i className="flaticon-dish" />
             <span>Pasta </span>
           </button>
         </li>
@@ -57,7 +67,7 @@ const GalleryIsotope = () => {
             onClick={handleFilterKeyChange("vegetarian")}
             data-filter=".vegetarian"
           >
-            <i className="flaticon-broccoli" />
+            <i className="flaticon-dish" />
             <span>Pizza </span>
           </button>
         </li>
@@ -67,7 +77,7 @@ const GalleryIsotope = () => {
             onClick={handleFilterKeyChange("potatoes")}
             data-filter=".potatoes"
           >
-            <i className="flaticon-fried-potatoes" />
+            <i className="flaticon-dish" />
             <span>Salad </span>
           </button>
         </li>
@@ -77,7 +87,7 @@ const GalleryIsotope = () => {
             onClick={handleFilterKeyChange("seafood")}
             data-filter=".seafood"
           >
-            <i className="flaticon-crab" />
+            <i className="flaticon-dish" />
             <span>Bread Toasts </span>
           </button>
         </li>
@@ -92,8 +102,12 @@ const GalleryIsotope = () => {
           </button>
         </li> */}
       </ul>
+
+
+
+      {/* Pasta  */}
       <div className="row gallery-active">
-        <div className="col-lg-4 col-sm-6 item potatoes">
+        <div className="col-lg-4 col-sm-6 item Pasta ">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -101,11 +115,11 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/6.webp" alt="Gallery" />
-            <h3>White sauce pasta</h3>
+            <h4>White sauce pasta</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
-        <div className="col-lg-4 col-sm-6 item vegetarian drinks">
+        <div className="col-lg-4 col-sm-6 item ">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -114,11 +128,11 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/7.webp" alt="Gallery" />
-            <h3>Red sauce pasta</h3>
+            <h4>Red sauce pasta</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
-        <div className="col-lg-4 col-sm-6 item seafood">
+        <div className="col-lg-4 col-sm-6 item Pasta ">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -127,10 +141,10 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/8.webp" alt="Gallery" />
-            <h3>Green sauce pasta</h3>
+            <h4>Green sauce pasta</h4>
           </div>
         </div>
-        <div className="col-lg-4 col-sm-6 item potatoes drinks">
+        <div className="col-lg-4 col-sm-6 item  Pasta ">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -138,7 +152,68 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/9.webp" alt="Gallery" />
-            <h3>Beef bolognese spegahetti pasta</h3>
+            <h4>Beef bolognese spegahetti pasta</h4>
+            {/* <span className="category">Delicious food</span> */}
+          </div>
+        </div>
+        <div className="col-lg-4 col-sm-6 item Pasta ">
+          <div
+            className="gallery-item-three"
+            data-aos="fade-up"
+            data-aos-delay={50}
+            data-aos-duration={1500}
+            data-aos-offset={50}
+          >
+            <img src="assets/images/allimg/menu/10.webp" alt="Gallery" />
+            <h4>Mix sauce spaghetti pasta</h4>
+            {/* <span className="category">Delicious food</span> */}
+          </div>
+        </div>
+        <div className="col-lg-4 col-sm-6 item Pasta ">
+          <div
+            className="gallery-item-three"
+            data-aos="fade-up"
+            data-aos-delay={100}
+            data-aos-duration={1500}
+            data-aos-offset={50}
+          >
+            <img src="assets/images/allimg/menu/11.webp" alt="Gallery" />
+            <h4>Signature spegatie pasta</h4>
+            {/* <span className="category">Delicious food</span> */}
+          </div>
+        </div>
+        <div className="col-lg-4 col-sm-6 item Pasta ">
+          <div
+            className="gallery-item-three"
+            data-aos="fade-up"
+            data-aos-duration={1500}
+            data-aos-offset={50}
+          >
+            <img src="assets/images/allimg/menu/12.webp" alt="Gallery" />
+            <h4>Special sauce pasta </h4>
+            {/* <span className="category">Delicious food</span> */}
+          </div>
+        </div>
+{/* Pasta  */}
+
+
+
+
+
+
+
+
+  {/* Pizza */}
+        <div className="col-lg-4 col-sm-6 item vegetarian">
+          <div
+            className="gallery-item-three"
+            data-aos="fade-up"
+            data-aos-delay={50}
+            data-aos-duration={1500}
+            data-aos-offset={50}
+          >
+            <img src="assets/images/allimg/menu/13.webp" alt="Gallery" />
+            <h4>Peproni pizza</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
@@ -150,54 +225,12 @@ const GalleryIsotope = () => {
             data-aos-duration={1500}
             data-aos-offset={50}
           >
-            <img src="assets/images/allimg/menu/10.webp" alt="Gallery" />
-            <h3>Mix sauce spaghetti pasta</h3>
-            {/* <span className="category">Delicious food</span> */}
-          </div>
-        </div>
-        <div className="col-lg-4 col-sm-6 item seafood drinks">
-          <div
-            className="gallery-item-three"
-            data-aos="fade-up"
-            data-aos-delay={100}
-            data-aos-duration={1500}
-            data-aos-offset={50}
-          >
-            <img src="assets/images/allimg/menu/11.webp" alt="Gallery" />
-            <h3>Signature spegatie pasta</h3>
-            {/* <span className="category">Delicious food</span> */}
-          </div>
-        </div>
-        <div className="col-lg-4 col-sm-6 item potatoes">
-          <div
-            className="gallery-item-three"
-            data-aos="fade-up"
-            data-aos-duration={1500}
-            data-aos-offset={50}
-          >
-            <img src="assets/images/allimg/menu/12.webp" alt="Gallery" />
-            <h3>Special sauce pasta </h3>
-            {/* <span className="category">Delicious food</span> */}
-          </div>
-        </div>
-
-
-
-
-        <div className="col-lg-4 col-sm-6 item vegetarian drinks">
-          <div
-            className="gallery-item-three"
-            data-aos="fade-up"
-            data-aos-delay={50}
-            data-aos-duration={1500}
-            data-aos-offset={50}
-          >
             <img src="assets/images/allimg/menu/14.webp" alt="Gallery" />
-            <h3>Peproni pizza</h3>
+            <h4>Margarita pizza</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
-        <div className="col-lg-4 col-sm-6 item seafood drinks">
+        <div className="col-lg-4 col-sm-6 item vegetarian">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -206,34 +239,14 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/15.webp" alt="Gallery" />
-            <h3>Margarita pizza</h3>
+            <h4>Alfrado pizza</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
 
 
 
-
-
-        
-
-        
-
-       
-
-        
-
-         
-
-        
-
-        
-
-         
-
-        
-
-         <div className="col-lg-4 col-sm-6 item seafood drinks">
+         <div className="col-lg-4 col-sm-6 item vegetarian">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -242,14 +255,14 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/16.webp" alt="Gallery" />
-            <h3>Alfrado pizza</h3>
+            <h4>Beef Ballistic Pizza</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
 
         
 
-         <div className="col-lg-4 col-sm-6 item seafood drinks">
+         <div className="col-lg-4 col-sm-6 item vegetarian">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -258,14 +271,14 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/17.webp" alt="Gallery" />
-            <h3>Beef bellistic pizza</h3>
+            <h4>Amadio’s Pizza</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
 
         
 
-         <div className="col-lg-4 col-sm-6 item seafood drinks">
+         <div className="col-lg-4 col-sm-6 item vegetarian">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -274,14 +287,19 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/18.webp" alt="Gallery" />
-            <h3>Amadio’s pizza</h3>
+            <h4>Garlic Chicken Pizza</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
 
-        
+  {/* Pizza */}
 
-         <div className="col-lg-4 col-sm-6 item seafood drinks">
+
+
+
+
+{/* Salad */}
+         <div className="col-lg-4 col-sm-6 item potatoes">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -290,14 +308,14 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/19.webp" alt="Gallery" />
-            <h3>Garlic chicken pizza</h3>
+            <h4>Halloumi Salad</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
 
         
 
-         <div className="col-lg-4 col-sm-6 item seafood drinks">
+         <div className="col-lg-4 col-sm-6 item potatoes">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -306,7 +324,7 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/20.webp" alt="Gallery" />
-            <h3>Mix veg pizza</h3>
+            <h4>Italian Salad</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
@@ -314,7 +332,7 @@ const GalleryIsotope = () => {
         
         
 
-         <div className="col-lg-4 col-sm-6 item seafood drinks">
+         <div className="col-lg-4 col-sm-6 item potatoes">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -323,14 +341,14 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/21.webp" alt="Gallery" />
-            <h3>Chicken burger</h3>
+            <h4>Roca Salad</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
 
         
 
-         <div className="col-lg-4 col-sm-6 item seafood drinks">
+         <div className="col-lg-4 col-sm-6 item potatoes">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -339,14 +357,14 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/22.webp" alt="Gallery" />
-            <h3>Chicken burger</h3>
+            <h4>Chicken burger</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
 
         
 
-         <div className="col-lg-4 col-sm-6 item seafood drinks">
+         <div className="col-lg-4 col-sm-6 item potatoes">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -355,14 +373,14 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/23.webp" alt="Gallery" />
-            <h3>Chicken burger</h3>
+            <h4>Chicken Malai Salad</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
 
         
 
-         <div className="col-lg-4 col-sm-6 item seafood drinks">
+         <div className="col-lg-4 col-sm-6 item potatoes">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -371,14 +389,22 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/24.webp" alt="Gallery" />
-            <h3>Chicken burger</h3>
+            <h4>Chicken burger</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
 
-        
+{/* Salad */}
 
-         <div className="col-lg-4 col-sm-6 item seafood drinks">
+
+
+
+
+
+
+        
+{/* Bread Toasts  */}
+         <div className="col-lg-4 col-sm-6 item seafood ">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -387,14 +413,12 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/25.webp" alt="Gallery" />
-            <h3>Chicken burger</h3>
+            <h4>Chicken Cheese Garlic Bread</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
 
-        
-
-         <div className="col-lg-4 col-sm-6 item seafood drinks">
+         <div className="col-lg-4 col-sm-6 item seafood ">
           <div
             className="gallery-item-three"
             data-aos="fade-up"
@@ -403,11 +427,11 @@ const GalleryIsotope = () => {
             data-aos-offset={50}
           >
             <img src="assets/images/allimg/menu/26.webp" alt="Gallery" />
-            <h3>Chicken burger</h3>
+            <h4>Cheese Garlic Bread</h4>
             {/* <span className="category">Delicious food</span> */}
           </div>
         </div>
-
+{/* Bread Toasts  */}
         
 
       </div>

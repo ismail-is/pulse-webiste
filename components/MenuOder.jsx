@@ -64,7 +64,7 @@ const MenuOder = () => {
         <div className="row align-items-center package package-sec">
           {/* Left Side - Meal Sliders */}
           <div className="col-lg-8 col-md-12 pt16 pb16 o_colored_level">
-            <div className="s_tabs_nav mb-3">
+            {/* <div className="s_tabs_nav mb-3">
               <ul className="nav nav-pills justify-content-center" role="tablist">
                 {['lifestyle', 'keto', 'veg', 'freshgrab'].map((tab) => (
                   <li className="nav-item" key={tab}>
@@ -79,7 +79,7 @@ const MenuOder = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
 
             <div className="s_tabs_content tab-content">
               <div className={`tab-pane fade ${activeTab === 'lifestyle' ? 'show active' : ''}`}>
@@ -87,10 +87,10 @@ const MenuOder = () => {
                   <div className="container">
                     {['breakfast', 'lunch', 'dinner', 'salad', 'snack'].map((mealType) => (
                       <div className="row align-items-center mb-4" key={mealType}>
-                        <div className="col-lg-4 col-md-3">
-                          <span className="english-font-dpbreak text-capitalize">{mealType}</span>
+                        <div className="col-lg-3 col-md-2">
+                          <span className="english-font-dpbreak text-capitalize" style={{color:'black'}}>{mealType}</span>
                         </div>
-                        <div className="col-lg-8 col-md-9">
+                        <div className="col-lg-9 col-md-9">
                           <div className="d-flex align-items-center">
                             <input
                               type="range"
@@ -171,7 +171,8 @@ const MenuOder = () => {
                             mealType === 'breakfast' ? 3 :
                             mealType === 'lunch' ? 2 :
                             mealType === 'dinner' ? 1 : 0,
-                          left: '50%',
+                          left: '30%',
+                          
                           transform: 'translateX(-50%)',
                         }}
                       >
@@ -219,7 +220,7 @@ const MenuOder = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div id="bottom_bar_home" className="row bottom-bar justify-content-between mt-4 mx-auto home-subscription-btn-sec text-center text-md-left">
+        <div id="bottom_bar_home" className="row bottom-bar justify-content-between mt-4 mx-auto home-subscription-btn-sec text-center text-md-left mb-10">
           <div className="col-12 col-md-3 mb-2 mb-md-0">
             <p className="english-font-bottombarp">
               Meal Type: <span className="font-weight-bold">{activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}</span>

@@ -72,13 +72,13 @@ const Sidebar = () => {
           </div>
           {/*Social Icons*/}
           <div className="social-style-one">
-            <Link href="contact">
+            <Link href="1">
               <i className="fab fa-twitter" />
             </Link>
-            <Link href="contact">
+            <Link href="1">
               <i className="fab fa-facebook-f" />
             </Link>
-            <Link href="contact">
+            <Link href="1">
               <i className="fab fa-instagram" />
             </Link>
             <a href="#">
@@ -315,7 +315,7 @@ const MobileMenu = () => {
                          <Link href="/">Home</Link>
                       </li>
                       <li>
-                         <Link href="/about">about</Link>
+                         <Link href="/">about</Link>
                       </li>
                       <li>
                            <Link href="/">Subscriptions </Link>
@@ -324,7 +324,7 @@ const MobileMenu = () => {
                       <Link href="/menu">Menu</Link>
                       </li>
                       <li>
-                        <Link href="contact">Contact</Link>
+                        <Link href="/">Contact</Link>
                       </li>
                     </ul>
                   </div>
@@ -342,7 +342,7 @@ const MobileMenu = () => {
                 <button>
                   {/* <i className="far fa-shopping-cart" /> <span>2</span> */}
                 </button>
-                <Link href="contact" className="theme-btn style-two">
+                <Link href="/" className="theme-btn style-two">
                   DOWNLOAD APP<i className="far fa-arrow-alt-right" />
                 </Link>
                 {/* menu sidbar */}
@@ -426,7 +426,7 @@ const Header = () => {
                         <Link href="/">Home</Link>
                       </li>
                       <li>
-                        <Link href="/about">about</Link>
+                        <Link href="/">about</Link>
                       </li>
                       <li>
                         <Link href="/">Subscriptions </Link>
@@ -555,7 +555,7 @@ const Header = () => {
                         </div>
                       </li> */}
                       <li>
-                        <Link href="contact">Contact</Link>
+                        <Link href="/">Contact</Link>
                       </li>
                     </ul>
                   </div>
@@ -573,7 +573,7 @@ const Header = () => {
                 {/* <button>
                   <i className="far fa-shopping-cart" /> <span>2</span>
                 </button> */}
-                <Link href="contact" className="theme-btn style-two">
+                <Link href="/" className="theme-btn style-two">
                  DOWNLOAD APP<i className="far fa-arrow-alt-right" />
                 </Link>
                 {/* menu sidbar */}

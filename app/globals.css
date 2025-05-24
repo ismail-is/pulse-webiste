@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap");
 
+/* custome */
+/* @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Qwitcher+Grypen:wght@400;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap'); */
+/* custome */
+
 .main-menu .navbar-collapse .mobile-menu li ul {
   opacity: 1 !important;
   visibility: unset !important;

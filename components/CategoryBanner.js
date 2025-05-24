@@ -28,7 +28,7 @@ const CategoryBanner = () => {
                 <i className="fas fa-star" />
                 <span>(5k)</span>
               </div>
-              <Link href="shop" className="theme-btn style-two">
+              <Link href="/" className="theme-btn style-two">
                 Order now <i className="far fa-arrow-alt-right" />
               </Link>
               <div className="food-image">
@@ -63,7 +63,7 @@ const CategoryBanner = () => {
                 <i className="fas fa-star" />
                 <span>(5k)</span>
               </div>
-              <Link href="shop" className="theme-btn">
+              <Link href="/" className="theme-btn">
                 Order now <i className="far fa-arrow-alt-right" />
               </Link>
               <div className="food-image">
@@ -98,7 +98,7 @@ const CategoryBanner = () => {
                 <i className="fas fa-star" />
                 <span>(5k)</span>
               </div>
-              <Link href="shop" className="theme-btn style-two">
+              <Link href="/" className="theme-btn style-two">
                 Order now <i className="far fa-arrow-alt-right" />
               </Link>
               <div className="food-image">

@@ -3,15 +3,17 @@ import { Nav, Tab } from "react-bootstrap";
 
 const Item = ({ item }) => {
   return (
-    <div className="food-menu-item style-two">
+    
+    <div className="food-menu-item style-two " >
+    {/* <div className="food-menu-item style-two"> */}
       <div className="image">
         <img src={item.img} alt="Food Menu" />
       </div>
       <div className="content">
-        <h5>
-          <span className="title">{item.title}</span> <span className="dots" />{" "}
-          <span className="price">${item.price}</span>
-        </h5>
+        <h6>
+          <span className="title" style={{color:'#014820'}}>{item.title}</span> <span className="dots" />{" "}
+          <span className="price" >${item.price}</span>
+        </h6>
         <p>{item.decs}</p>
       </div>
     </div>
@@ -345,27 +347,27 @@ const RestaurantMenu = ({ menus }) => {
       ];
 
   return (
-    <section className="restaurant-menu-area pb-100 rpb-70 rel z-1">
-      <div className="container container-1050">
+    <section className="restaurant-menu-area pb-100 rpb-70 rel z-1 "  style={{backgroundColor:'#FEF2BE'}}> 
+      <div className="container container-1050" >
         <div className="row justify-content-center">
-          <div className="col-xl-8 col-lg-9">
+          <div className="col-xl-8 col-lg-9" style={{marginTop:'30px'}}>
             <div
               className="section-title text-center mb-50"
               data-aos="fade-up"
               data-aos-duration={1500}
               data-aos-offset={50}
             >
-              <span className="sub-title mb-5">popular menu</span>
-              <h2>
+              <h2>popular menu</h2>
+              {/* <h2>
                 we provide exclusive food based on usa explore our popular food
-              </h2>
+              </h2> */}
             </div>
           </div>
         </div>
-        <Tab.Container defaultActiveKey={"food-tab1"}>
+        <Tab.Container defaultActiveKey={"food-tab1"} >
           <Nav
             as={"ul"}
-            className="nav food-menu-tab mb-40"
+            className="nav food-menu-tab mb-40 "
             data-aos="fade-up"
             data-aos-delay={50}
             data-aos-duration={1500}
@@ -379,19 +381,19 @@ const RestaurantMenu = ({ menus }) => {
                   eventKey={menu.event}
                 >
                   <i className={menu.icon} />
-                  <span>{menu.title}</span>
+                  <span >{menu.title}</span>
                 </Nav.Link>
               </Nav.Item>
             ))}
           </Nav>
-          <Tab.Content className="food-menu-tab-content tab-content">
+          <Tab.Content className="food-menu-tab-content tab-content" >
             {items.map((menu) => (
               <Tab.Pane
                 className="tab-pane fade"
                 eventKey={menu.event}
                 key={menu.id}
               >
-                <div className="row gap-90">
+                {/* <div className="row gap-90">
                   <div
                     className="col-lg-6 pb-30"
                     data-aos="fade-right"
@@ -411,20 +413,47 @@ const RestaurantMenu = ({ menus }) => {
                       (item, i) => i >= 4 && <Item item={item} />
                     )}
                   </div>
-                </div>
+                </div> */}
+
+                {/* new */}
+                <div className="row gap-90">
+  <div
+    className="col-lg-6 pb-30"
+    data-aos="fade-right"
+    data-aos-duration={1500}
+    data-aos-offset={50}
+  >
+    {menu.items
+      .slice(0, Math.ceil(menu.items.length / 2))
+      .map((item, i) => <Item key={i} item={item} />)}
+  </div>
+
+  <div
+    className="col-lg-6 pb-30"
+    data-aos="fade-left"
+    data-aos-duration={1500}
+    data-aos-offset={50}
+  >
+    {menu.items
+      .slice(Math.ceil(menu.items.length / 2))
+      .map((item, i) => <Item key={i} item={item} />)}
+  </div>
+</div>
+
+                {/* new */}
               </Tab.Pane>
             ))}
           </Tab.Content>
         </Tab.Container>
       </div>
-      <div className="testimonials-shapes">
+      {/* <div className="testimonials-shapes">
         <div className="shape one">
           <img src="assets/images/shapes/chicken-menu1.png" alt="Shape" />
         </div>
         <div className="shape two">
           <img src="assets/images/shapes/chicken-menu2.png" alt="Shape" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

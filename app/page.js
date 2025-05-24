@@ -149,7 +149,7 @@ const page = () => {
 
 
 {/* custome */}
-{/* <MenuOder/> */}
+<MenuOder/>
 {/* custome */}
 
 
@@ -241,7 +241,7 @@ const page = () => {
                 </p>
                 <p>Whether you're chasing fitness goals or simply want to feel your best — Pulse delivers fresh, wholesome meals that never compromise on taste.</p>
                 <div className="about-btn-author mb-60">
-                  <Link href="about" className="theme-btn">
+                  <Link href="/" className="theme-btn">
                     learn more us <i className="far fa-arrow-alt-right" />
                   </Link>
                   {/* <div className="author">
@@ -359,13 +359,13 @@ const page = () => {
         </div>
         <div className="headline-shapes">
           <div className="shape one">
-            <img src="assets/images/shapes/chillies.png" alt="Shape" />
+            <img src="assets/images/allimg/dishpng/rotate/2.png" alt="Shape" />
           </div>
           <div className="shape two">
-            <img src="assets/images/shapes/tomato.png" alt="Shape" />
+            <img src="assets/images/allimg/dishpng/rotate/4.png" alt="Shape" />
           </div>
           <div className="shape three">
-            <img src="assets/images/shapes/pizza.png" alt="Shape" />
+            <img src="assets/images/allimg/dishpng/rotate/3.png" alt="Shape" />
           </div>
         </div>
       </section>
@@ -802,7 +802,7 @@ const page = () => {
                   </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/food/food1.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/14.png" alt="Food Image" />
                 </div>
               </div>
 
@@ -831,7 +831,7 @@ const page = () => {
                   </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/allimg/dishpng/13.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/12.png" alt="Food Image" />
                 </div>
               </div>
               <div className="food-item" id="foodItem2">
@@ -845,7 +845,7 @@ const page = () => {
                   </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/allimg/dishpng/13.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/11.png" alt="Food Image" />
                 </div>
               </div>
 
@@ -861,7 +861,7 @@ const page = () => {
                   </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/allimg/dishpng/12.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/10.png" alt="Food Image" />
                 </div>
               </div>
               <div className="food-item mb-30" id="foodItem1" style={{marginTop:'-30px'}}>
@@ -875,7 +875,7 @@ const page = () => {
                   </div> */}
                 </div>
                 <div className="image">
-                  <img src="assets/images/allimg/dishpng/12.png" alt="Food Image" />
+                  <img src="assets/images/allimg/dishpng/13.png" alt="Food Image" />
                 </div>
               </div>
             </div>
@@ -1274,7 +1274,7 @@ const page = () => {
                   {/* <span className="sub-title mb-5">Need any food?</span> */}
                   <h2>our search for great food ends here</h2>
                 </div>
-                <Link href="contact" className="theme-btn style-two">
+                <Link href="/" className="theme-btn style-two">
                  Order Now  <i className="far fa-arrow-alt-right" />
                 </Link>
                 <div
@@ -1574,7 +1574,7 @@ const page = () => {
         </div>
       </section> */}
       {/* footer 5 */}
-       <div className="headline-area bgc-dark-green pt-120 rpt-60 rel z-2">
+       {/* <div className="headline-area bgc-dark-green pt-120 rpt-60 rel z-2">
         <span className="marquee-wrap white-text">
           <span className="marquee-inner left">
             <span className="marquee-item">Italian pizza</span>
@@ -1627,7 +1627,7 @@ const page = () => {
             <img src="assets/images/shapes/heading2.png" alt="Shape" />
           </div>
         </div>
-      </div>
+      </div> */}
         <section className="newsletter-area bgc-dark-green pt-75 rel z-1">
         <div className="container">
           <div className="newsletter-wrap">
@@ -1639,8 +1639,8 @@ const page = () => {
                   data-aos-duration={1500}
                   data-aos-offset={50}
                 >
-                  <span className="sub-title mb-5">join our newsletter</span>
-                  <h2>subscribe follow newsletter to get more updates</h2>
+                  {/* <span className="sub-title mb-5">join our newsletter</span> */}
+                  <h2>Ready to subscribe or have questions? Contact us now!</h2>
                 </div>
               </div>
               <div className="col-xl-5 col-lg-6">
@@ -1650,7 +1650,7 @@ const page = () => {
                   data-aos-duration={1500}
                   data-aos-offset={50}
                 >
-                  <h6>Hurry up to join us to get more offer.</h6>
+                  {/* <h6>Hurry up to join us to get more offer.</h6> */}
                   <form className="newsletter-form style-two mt-15" action="#">
                     <label htmlFor="news-email">
                       <i className="fas fa-envelope" />
@@ -1665,12 +1665,12 @@ const page = () => {
                       Subscribe <i className="far fa-arrow-alt-right" />
                     </button>
                   </form>
-                  <div className="check-field mt-15">
+                  {/* <div className="check-field mt-15">
                     <input id="update-news" type="checkbox" />
                     <label htmlFor="update-news">
                       Get 15 days update news &amp; latest offer
                     </label>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

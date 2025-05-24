@@ -1,6 +1,6 @@
 const Headline = ({ mb = "105" }) => {
   return (
-    <div className={`headline-area mb-${mb} rmb-85 rel z-1`}>
+    <div className={`headline-area mb-${mb} rmb-85 rel z-1`} >
       <span className="marquee-wrap">
         <span className="marquee-inner left">
           <span className="marquee-item">Italian pizza</span>

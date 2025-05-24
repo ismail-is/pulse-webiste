@@ -522,7 +522,7 @@ const Footer3 = () => {
         <div className="container rel text-center">
           <ul className="footer-bottom-nav">
             <li>
-              <Link href="product-details">Hamburger</Link>
+              <Link href="product-details">Hamburgear</Link>
             </li>
             <li>
               <a href="#">Pizza</a>
@@ -611,7 +611,7 @@ const Footer5 = () => {
                 <ul>
                   <li>
                     <a href="mailto:wellfood@gmail.com">
-                      <u>wellfood@gmail.com</u>
+                      <u>Pulse@gmail.com</u>
                     </a>
                   </li>
                   <li>
@@ -675,18 +675,18 @@ const Footer5 = () => {
         <div className="container rel text-center">
           <ul className="footer-bottom-nav">
             <li>
-              <Link href="product-details">Hamburger</Link>
+              <Link href="product-details">Pasta </Link>
             </li>
             <li>
               <a href="#">Pizza</a>
             </li>
             <li>
-              <Link href="product-details">Vegetable roll</Link>
+              <Link href="product-details">Salad </Link>
             </li>
             <li>
-              <Link href="product-details">Sea fish</Link>
+              <Link href="product-details">Bread Toasts </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="product-details">Fried chicken</Link>
             </li>
             <li>
@@ -694,7 +694,7 @@ const Footer5 = () => {
             </li>
             <li>
               <a href="#">Saladr</a>
-            </li>
+            </li> */}
           </ul>
           {/* Scroll Top Button */}
           <button className="scroll-top scroll-to-target" data-target="html">
@@ -707,7 +707,7 @@ const Footer5 = () => {
             <div className="col-lg-5">
               <div className="copyright-text text-center text-lg-start">
                 <p>
-                  Copyright 2024 <Link href="/">Wellfood</Link>. All Rights
+                  Copyright 2025 <Link href="/">Pulse</Link>. All Rights
                   Reserved{" "}
                 </p>
               </div>
