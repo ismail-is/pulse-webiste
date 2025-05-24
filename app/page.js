@@ -126,8 +126,8 @@ const page = () => {
                 data-aos-offset={50}
               >
                 <img
-  src="assets/images/allimg/dishpng/rotate/3.png"
-  // src="assets/images/allimg/home/mainbg1.png"
+  // src="assets/images/allimg/dishpng/rotate/3.png"
+  src="assets/images/allimg/home/mainbg1.png"
   alt="CTA"
   style={{
     animation: 'spin 20s linear infinite',
