@@ -10912,7 +10912,7 @@ blockquote .blockquote-footer:before {
 }
 @media (max-width: 768px) {
   #bottom_bar_home  {
-   margin-top: -160px !important;
+   margin-top: -10px !important;
    z-index: 1;
    
     /* background-color: red; */
