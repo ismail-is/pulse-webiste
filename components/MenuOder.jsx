@@ -15,8 +15,8 @@ const MenuOder = () => {
     breakfast: '/assets/images/allimg/box/1.png',
     lunch: '/assets/images/allimg/box/2.png',
     dinner: '/assets/images/allimg/box/3.png',
-    salad: '/assets/images/allimg/box/6.png',
-    snack: '/assets/images/allimg/box/6.png',
+    salad: '/assets/images/allimg/box/8.png',
+    snack: '/assets/images/allimg/box/7.png',
   };
 
   const handleTabChange = (tab) => setActiveTab(tab);
@@ -166,16 +166,17 @@ const MenuOder = () => {
                         className="meal-item w-75"
                         style={{
                           position: 'relative',
-                          height: '140px',
+                          height: '120px',
                           marginTop:
                             mealType === 'lunch' ? '-40px' :
                               mealType === 'dinner' ? '-40px' :
-                                mealType === 'salad' ? '-10px' :
-                                  mealType === 'snack' ? '-140px' :
-                                    '100px',
+                                mealType === 'salad' ? '-20px' :
+                                  mealType === 'snack' ? '-25px' :
+                                    '10px',
                           zIndex:
-                            mealType === 'breakfast' ? 3 :
-                              mealType === 'lunch' ? 2 :
+                            mealType === 'breakfast' ? 4 :
+                              mealType === 'lunch' ? 3 :
+                              mealType === 'snack' ? -2 :
                                 mealType === 'dinner' ? 1 : 0,
                           left: '30%',
                           transform: 'translateX(-50%)',
@@ -205,10 +206,7 @@ const MenuOder = () => {
                               fontWeight: 'bold',
                               backgroundColor: '#01461F',
                               zIndex: 10,
-                              marginTop:
-                                mealType === 'snack' ? '20px' :
-                                  mealType === 'salad' ? '70px' :
-                                    '100px',
+                             
                             }}
                           >
                             x{count}
