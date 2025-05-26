@@ -12,11 +12,11 @@ const MenuOder = () => {
   });
 
   const mealImages = {
-    breakfast: 'assets/images/allimg/box/1.png',
-    lunch: 'assets/images/allimg/box/2.png',
-    dinner: 'assets/images/allimg/box/3.png',
-    salad: 'assets/images/allimg/box/6.png',
-    snack: 'assets/images/allimg/box/6.png',
+    breakfast: '/assets/images/allimg/box/1.png',
+    lunch: './assets/images/allimg/box/2.png',
+    dinner: './assets/images/allimg/box/3.png',
+    salad: './assets/images/allimg/box/6.png',
+    snack: './assets/images/allimg/box/6.png',
   };
 
   const handleTabChange = (tab) => setActiveTab(tab);
