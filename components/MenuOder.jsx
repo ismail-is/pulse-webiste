@@ -12,9 +12,11 @@ const MenuOder = () => {
   });
 
   const mealImages = {
-    breakfast: 'https://freshhouse.com.sa/freshhouse_website_extended/static/src/img/breakfastbox.png',
-    lunch: 'https://freshhouse.com.sa/freshhouse_website_extended/static/src/img/lunchbox.png',
-    dinner: 'https://freshhouse.com.sa/freshhouse_website_extended/static/src/img/dinnerbox.png'
+    breakfast: 'assets/images/allimg/box/1.png',
+    lunch: 'assets/images/allimg/box/2.png',
+    dinner: 'assets/images/allimg/box/3.png',
+    salad: 'assets/images/allimg/box/6.png',
+    snack: 'assets/images/allimg/box/6.png',
   };
 
   const handleTabChange = (tab) => setActiveTab(tab);
@@ -46,7 +48,7 @@ const MenuOder = () => {
   return (
     <section className="s_text_image pt32 pb32 o_colored_level" style={{ backgroundImage: 'none' }}>
       <div className="container">
-           <div className="row justify-content-center">
+        <div className="row justify-content-center">
           <div className="col-xxl-12 col-xl-12 col-lg-9">
             <div
               className="section-title text-center mb-50"
@@ -54,41 +56,24 @@ const MenuOder = () => {
               data-aos-duration={1500}
               data-aos-offset={50}
             >
-              {/* <span className="sub-title mb-5">  Fresh From Our Chefs To You</span> */}
-              <h2 style={{fontWeight:'bolder'}}>
-               YOUR DAILY ROUTINE
+              <h2 style={{ fontWeight: 'bolder' }}>
+                YOUR DAILY ROUTINE
               </h2>
             </div>
           </div>
         </div>
+
         <div className="row align-items-center package package-sec">
           {/* Left Side - Meal Sliders */}
           <div className="col-lg-8 col-md-12 pt16 pb16 o_colored_level">
-            {/* <div className="s_tabs_nav mb-3">
-              <ul className="nav nav-pills justify-content-center" role="tablist">
-                {['lifestyle', 'keto', 'veg', 'freshgrab'].map((tab) => (
-                  <li className="nav-item" key={tab}>
-                    <a
-                      className={`nav-link ${activeTab === tab ? 'active' : ''}`}
-                      onClick={() => handleTabChange(tab)}
-                    >
-                      {tab === 'lifestyle' ? 'Lifestyles' :
-                        tab === 'keto' ? 'Low Carb' :
-                          tab === 'veg' ? 'Gluten Free' : 'FreshGrab'}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div> */}
-
             <div className="s_tabs_content tab-content">
               <div className={`tab-pane fade ${activeTab === 'lifestyle' ? 'show active' : ''}`}>
                 <section className="s_text_block">
                   <div className="container">
                     {['breakfast', 'lunch', 'dinner', 'salad', 'snack'].map((mealType) => (
                       <div className="row align-items-center mb-4" key={mealType} >
-                        <div className="col-lg-2 col-md-2 " id='mobilegap'>
-                          <span className="english-font-dpbreak text-capitalize" style={{color:'black'}}>{mealType}</span>
+                        <div className="col-lg-2 col-md-2" id="mobilegap">
+                          <span className="english-font-dpbreak text-capitalize" style={{ color: 'black' }}>{mealType}</span>
                         </div>
                         <div className="col-lg-9 col-md-9">
                           <div className="d-flex align-items-center">
@@ -102,11 +87,12 @@ const MenuOder = () => {
                               style={{ accentColor: '#01461F' }}
                             />
                             <div className="d-flex align-items-center">
-                              <span className="span_package_digits rounded-circle bg-light mx-2 d-flex align-items-center justify-content-center"
-                                style={{ width: '30px', height: '30px' }}>
+                              <span
+                                className="span_package_digits rounded-circle bg-light mx-2 d-flex align-items-center justify-content-center"
+                                style={{ width: '30px', height: '30px' }}
+                              >
                                 {mealCounts[mealType]}
                               </span>
-
                               <button
                                 className="btn btn-outline-secondary rounded-circle p-0 d-flex align-items-center justify-content-center animated-button"
                                 style={{
@@ -148,31 +134,50 @@ const MenuOder = () => {
           </div>
 
           {/* Right Side - Meal Image Preview */}
-          <div className="col-lg-4 col-md-12 packages_pricing_img_div pt16 pb16 p-12" style={{zIndex:-1}}>
-            <div className="card shadow-sm border-0">
+          <div className="col-lg-4 col-md-12 packages_pricing_img_div pt16 pb16 p-12" style={{ zIndex: -1 }}>
+            <div >
               <div className="card-body text-center">
                 <div
-                  className="meal-visualization mb-4 d-flex flex-column align-items-center justify-content-center"
-                  style={{ position: 'relative', height: '400px', width: '100%' }} // Added position relative and fixed height here
+                  className=" mb-4 d-flex flex-column align-items-center justify-content-center"
+                  style={{ position: 'relative', height: '400px', width: '100%' }}
                 >
                   {Object.entries(mealCounts).map(([mealType, count]) => (
                     mealImages[mealType] && count > 0 && (
                       <div
+                      //  key={mealType}
+                      //   className="meal-item w-75"
+                      //   style={{
+                      //     position: 'relative',
+                      //     height: '140px',
+                      //     marginTop:
+                      //       mealType === 'lunch' ? '-80px' :
+                      //       mealType === 'dinner' ? '-80px' :
+                      //       '130px',
+                      //     zIndex:
+                      //       mealType === 'breakfast' ? 3 :
+                      //       mealType === 'lunch' ? 2 :
+                      //       mealType === 'dinner' ? 1 : 0,
+                      //     left: '30%',
+                          
+                      //     transform: 'translateX(-50%)',
+
+
                         key={mealType}
                         className="meal-item w-75"
                         style={{
                           position: 'relative',
                           height: '140px',
                           marginTop:
-                            mealType === 'lunch' ? '-80px' :
-                            mealType === 'dinner' ? '-80px' :
-                            '130px',
+                            mealType === 'lunch' ? '-40px' :
+                              mealType === 'dinner' ? '-40px' :
+                                mealType === 'salad' ? '-10px' :
+                                  mealType === 'snack' ? '-140px' :
+                                    '100px',
                           zIndex:
                             mealType === 'breakfast' ? 3 :
-                            mealType === 'lunch' ? 2 :
-                            mealType === 'dinner' ? 1 : 0,
+                              mealType === 'lunch' ? 2 :
+                                mealType === 'dinner' ? 1 : 0,
                           left: '30%',
-                          
                           transform: 'translateX(-50%)',
                         }}
                       >
@@ -187,7 +192,7 @@ const MenuOder = () => {
                             display: 'block'
                           }}
                         />
-                        {count > 1 && (
+                        {(count > 1 || mealType === 'salad' || mealType === 'snack') && (
                           <span
                             className="badge badge-dark rounded-circle d-flex align-items-center justify-content-center"
                             style={{
@@ -199,7 +204,11 @@ const MenuOder = () => {
                               fontSize: '12px',
                               fontWeight: 'bold',
                               backgroundColor: '#01461F',
-                              zIndex: 10
+                              zIndex: 10,
+                              marginTop:
+                                mealType === 'snack' ? '20px' :
+                                  mealType === 'salad' ? '70px' :
+                                    '100px',
                             }}
                           >
                             x{count}
@@ -209,18 +218,13 @@ const MenuOder = () => {
                     )
                   ))}
                 </div>
-
-                {/* Optional: Total Items summary */}
-                {/* <div className="total-summary bg-light p-3 rounded">
-                  <h6>Total Items: {totalItems}</h6>
-                </div> */}
               </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div id="bottom_bar_home" className="row bottom-bar justify-content-between mt-4 mx-auto home-subscription-btn-sec text-center text-md-left mb-10" >
+        <div id="bottom_bar_home" className="row bottom-bar justify-content-between  mx-auto home-subscription-btn-sec text-center text-md-left mb-10" style={{marginTop:'100px'}}>
           <div className="col-12 col-md-3 mb-2 mb-md-0">
             <p className="english-font-bottombarp">
               Meal Type: <span className="font-weight-bold">{activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}</span>
