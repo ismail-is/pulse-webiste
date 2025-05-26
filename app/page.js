@@ -77,7 +77,7 @@ const page = () => {
 <section
         className="hero-area-three pt-250 pb-220 rpb-100 rel z-1"
         style={{
-          backgroundImage: "url(assets/images/allimg/home/backbg.png)" ,
+          backgroundImage: "url(assets/images/allimg/home/bg3.png)" ,
         }}
       >
         <span className="marquee-wrap style-two text-white">
