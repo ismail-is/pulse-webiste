@@ -135,7 +135,7 @@ const MenuOder = () => {
 
           {/* Right Side - Meal Image Preview */}
           <div className="col-lg-4 col-md-12 packages_pricing_img_div pt16 pb16 p-12" style={{ zIndex: -1 }}>
-            <div className="">
+            <div >
               <div className="card-body text-center">
                 <div
                   className="meal-visualization mb-4 d-flex flex-column align-items-center justify-content-center"
